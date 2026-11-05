@@ -1,0 +1,131 @@
+{
+  "projectsGallery": {
+    "totalCards": 12,
+    "hasProject11": true,
+    "hasProject12": true,
+    "inspirationBadges": true,
+    "allHaveCta": true,
+    "filterResults": {
+      "all": 12,
+      "interior": 3,
+      "exterior": 3,
+      "texture": 2,
+      "renovation": 4
+    }
+  },
+  "contactReferral": {
+    "bannerVisible": true,
+    "bannerText": "You're inquiring about our project showcase: \"Modern Exterior Makeover\" (Exterior Weather-Shield Coatings).",
+    "selectedService": "Multiple Services",
+    "hasPrepopulatedDescription": true,
+    "dismissWorks": true
+  },
+  "loginPage": {
+    "passwordToggle": {
+      "initialType": "password",
+      "toggledType": "text",
+      "restoredType": "password"
+    },
+    "forgotPasswordNotice": true,
+    "googleSocialNotice": true,
+    "invalidLoginFeedback": true,
+    "validLoginFeedback": true
+  },
+  "registerPage": {
+    "toggles": {
+      "p1Type": "text",
+      "p2Type": "text"
+    },
+    "strengthMeter": {
+      "weak": "Weak password",
+      "strong": "Strong password"
+    },
+    "socialNotice": true,
+    "validRegistration": true
+  },
+  "responsiveness": {
+    "index.html": {
+      "1920px": "OK",
+      "1440px": "OK",
+      "1024px": "OK",
+      "768px": "OK",
+      "425px": "OK",
+      "375px": "OK"
+    },
+    "home-2.html": {
+      "1920px": "OK",
+      "1440px": "OK",
+      "1024px": "OK",
+      "768px": "OK",
+      "425px": "OK",
+      "375px": "OK"
+    },
+    "about.html": {
+      "1920px": "OK",
+      "1440px": "OK",
+      "1024px": "OK",
+      "768px": "OK",
+      "425px": "OK",
+      "375px": "OK"
+    },
+    "services.html": {
+      "1920px": "OK",
+      "1440px": "OK",
+      "1024px": "OK",
+      "768px": "OK",
+      "425px": "OK",
+      "375px": "OK"
+    },
+    "projects.html": {
+      "1920px": "OK",
+      "1440px": "OK",
+      "1024px": "OK",
+      "768px": "OK",
+      "425px": "OK",
+      "375px": "OK"
+    },
+    "pricing.html": {
+      "1920px": "OK",
+      "1440px": "OK",
+      "1024px": "OK",
+      "768px": "OK",
+      "425px": "OK",
+      "375px": "OK"
+    },
+    "contact.html": {
+      "1920px": "OK",
+      "1440px": "OK",
+      "1024px": "OK",
+      "768px": "OK",
+      "425px": "OK",
+      "375px": "OK"
+    },
+    "login.html": {
+      "1920px": "OK",
+      "1440px": "OK",
+      "1024px": "OK",
+      "768px": "OK",
+      "425px": "OK",
+      "375px": "OK"
+    },
+    "register.html": {
+      "1920px": "OK",
+      "1440px": "OK",
+      "1024px": "OK",
+      "768px": "OK",
+      "425px": "OK",
+      "375px": "OK"
+    }
+  },
+  "screenshots": [
+    "projects-desktop.png",
+    "projects-mobile.png",
+    "login-desktop.png",
+    "login-mobile.png",
+    "register-desktop.png",
+    "register-mobile.png",
+    "home-1-final-desktop.png",
+    "home-2-final-desktop.png"
+  ],
+  "consoleErrors": []
+}

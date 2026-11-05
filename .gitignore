@@ -1,0 +1,18 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary Test Files & Artifacts
+.temp_*
+*.log
+*.tmp
+
+# Editor & IDE Directories
+.vscode/
+.idea/
+
+# Dependencies & Environment
+node_modules/
+.env
+.env.*

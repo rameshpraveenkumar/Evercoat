@@ -1,0 +1,227 @@
+# EVERCOAT Image Sourcing & License Directory
+# Source: Unsplash (Unsplash License - Free for commercial and non-commercial use)
+# Reference: https://unsplash.com/license
+
+1. Hero Section 1 (Home 1)
+   File: assets/images/hero/hero-interior.jpg
+   Source URL: https://images.unsplash.com/photo-1600210492486-724fe5c67fb0
+   License: Unsplash License (Free commercial & non-commercial use)
+   Description: Sunlit modern luxury living room with architectural finishes
+
+2. Hero Section 2 (Home 2 Primary)
+   File: assets/images/hero/hero-editorial-1.jpg
+   Source URL: https://images.unsplash.com/photo-1600585154340-be6161a56a0c
+   License: Unsplash License (Free commercial & non-commercial use)
+   Description: Modern residential architecture and contemporary interior
+
+3. Hero Section 2 (Home 2 Secondary)
+   File: assets/images/hero/hero-editorial-2.jpg
+   Source URL: https://images.unsplash.com/photo-1618221195710-dd6b41faaea6
+   License: Unsplash License (Free commercial & non-commercial use)
+   Description: Editorial minimalist architectural space with warm textures
+
+3b. Hero Section 2 (Home 2 Full-Width Redesign Background)
+   File: assets/images/hero/hero-home-2.jpg
+   Source URL: https://images.unsplash.com/photo-1618221195710-dd6b41faaea6
+   License: Unsplash License (Free commercial & non-commercial use)
+   Description: High-end editorial architectural living room with warm painted walls, natural daylight and modern furnishings
+
+4. Before & After Showcase (Before)
+   File: assets/images/before-after/before-room.jpg
+   Source URL: https://images.unsplash.com/photo-1513694203232-719a280e022f
+   License: Unsplash License (Free commercial & non-commercial use)
+   Description: Raw, unrenovated interior room with bare walls
+
+5. Before & After Showcase (After)
+   File: assets/images/before-after/after-room.jpg
+   Source URL: https://images.unsplash.com/photo-1616486338812-3dadae4b4ace
+   License: Unsplash License (Free commercial & non-commercial use)
+   Description: Finished designer living room with warm painted walls and styling
+
+6. Service 1: Interior Painting
+   File: assets/images/services/interior-painting.jpg
+   Source URL: https://images.unsplash.com/photo-1581858726788-75bc0f6a952d
+   License: Unsplash License (Free commercial & non-commercial use)
+   Description: Professional painter applying clean coat on interior wall
+
+7. Service 2: Exterior Painting
+   File: assets/images/services/exterior-painting.jpg
+   Source URL: https://images.unsplash.com/photo-1568605114967-8130f3a36994
+   License: Unsplash License (Free commercial & non-commercial use)
+   Description: Beautiful contemporary multi-storey residence exterior
+
+8. Service 3: Texture Finishes
+   File: assets/images/services/texture-finish.jpg
+   Source URL: https://images.unsplash.com/photo-1507652313519-d4e9174996dd
+   License: Unsplash License (Free commercial & non-commercial use)
+   Description: Subtle artisan textured plaster wall with organic lighting
+
+9. Service 4: Minor Renovations
+   File: assets/images/services/minor-renovation.jpg
+   Source URL: https://images.unsplash.com/photo-1503387762-592deb58ef4e
+   License: Unsplash License (Free commercial & non-commercial use)
+   Description: Architectural refurbishment, restoration and precision carpentry
+
+10. About & Craftsmanship
+   File: assets/images/about/about-renovation.jpg
+   Source URL: https://images.unsplash.com/photo-1600607687939-ce8a6c25118c
+   License: Unsplash License (Free commercial & non-commercial use)
+   Description: High-end bespoke residential renovation with refined details
+
+11. Professional Painter at Work
+   File: assets/images/about/painters-work.jpg
+   Source URL: https://images.unsplash.com/photo-1562259949-e8e7689d7828
+   License: Unsplash License (Free commercial & non-commercial use)
+   Description: Skilled artisan rolling paint on high wall with precision
+
+12. Split-Screen Login Architectural Visual
+   File: assets/images/login/login-home.jpg
+   Source URL: https://images.unsplash.com/photo-1618221195710-dd6b41faaea6
+   License: Unsplash License (Free commercial & non-commercial use)
+   Description: Modern aesthetic interior living space with warm architectural walls and refined furnishing
+
+13. Project 1: Luxury Living Room Transformation
+   File: assets/images/projects/project-1-living.jpg
+   Source URL: https://images.unsplash.com/photo-1600585154526-990dced4db0d
+   License: Unsplash License (Free commercial & non-commercial use)
+   Category: Interior Painting
+
+14. Project 2: Coastal Villa Exterior Weatherproofing
+   File: assets/images/projects/project-2-exterior.jpg
+   Source URL: https://images.unsplash.com/photo-1512917774080-9991f1c4c750
+   License: Unsplash License (Free commercial & non-commercial use)
+   Category: Exterior Painting
+
+15. Project 3: Venetian Plaster Feature Wall
+   File: assets/images/projects/project-3-texture.jpg
+   Source URL: https://images.unsplash.com/photo-1507652313519-d4e9174996dd
+   License: Unsplash License (Free commercial & non-commercial use)
+   Category: Texture Finishes
+
+16. Project 4: Open Concept Kitchen Refurbishment
+   File: assets/images/projects/project-4-dining.jpg
+   Source URL: https://images.unsplash.com/photo-1556911220-e15b29be8c8f
+   License: Unsplash License (Free commercial & non-commercial use)
+   Category: Renovations
+
+17. Project 5: Calm Neutral Master Suite
+   File: assets/images/projects/project-5-bedroom.jpg
+   Source URL: https://images.unsplash.com/photo-1598928506311-c55ded91a20c
+   License: Unsplash License (Free commercial & non-commercial use)
+   Category: Interior Painting
+
+18. Project 6: Suburban Facade & Trim Revamp
+   File: assets/images/projects/project-6-facade.jpg
+   Source URL: https://images.unsplash.com/photo-1600596542815-ffad4c1539a9
+   License: Unsplash License (Free commercial & non-commercial use)
+   Category: Exterior Painting
+
+19. Project 7: Artisan Terracotta Accent Wall
+   File: assets/images/projects/project-7-feature-wall.jpg
+   Source URL: https://images.unsplash.com/photo-1616137466211-f939a420be84
+   License: Unsplash License (Free commercial & non-commercial use)
+   Category: Texture Finishes
+
+20. Project 8: Architectural Stairwell & Hallway
+   File: assets/images/projects/project-8-hallway.jpg
+   Source URL: https://images.unsplash.com/photo-1600573472550-8090b5e0745e
+   License: Unsplash License (Free commercial & non-commercial use)
+   Category: Interior Painting
+
+21. Project 9: Urban Penthouse Interior Makeover
+   File: assets/images/projects/project-9-apartment.jpg
+   Source URL: https://images.unsplash.com/photo-1502672260266-1c1ef2d93688
+   License: Unsplash License (Free commercial & non-commercial use)
+   Category: Renovations
+
+22. Project 10: Creative Studio Refurbishment
+   File: assets/images/projects/project-10-studio.jpg
+   Source URL: https://images.unsplash.com/photo-1618221195710-dd6b41faaea6
+   License: Unsplash License (Free commercial & non-commercial use)
+   Category: Renovations
+
+23. Team Member 1: Founder & Project Director (Illustrative Stock Portrait)
+   File: assets/images/about/team/team-member-1.jpg
+   Source URL: https://images.unsplash.com/photo-1560250097-0b93528c311a
+   Credit: LinkedIn Sales Solutions on Unsplash
+   License: Unsplash License (Free commercial & non-commercial use)
+   Description: Professional portrait representing Founder & Project Director
+
+24. Team Member 2: Painting Supervisor (Illustrative Stock Portrait)
+   File: assets/images/about/team/team-member-2.jpg
+   Source URL: https://images.unsplash.com/photo-1519085360753-af0119f7cbe7
+   Credit: LinkedIn Sales Solutions on Unsplash
+   License: Unsplash License (Free commercial & non-commercial use)
+   Description: Professional portrait representing Painting Supervisor
+
+25. Team Member 3: Interior Design Consultant (Illustrative Stock Portrait)
+   File: assets/images/about/team/team-member-3.jpg
+   Source URL: https://images.unsplash.com/photo-1573496359142-b8d87734a5a2
+   Credit: Christina @ wocintechchat.com on Unsplash
+   License: Unsplash License (Free commercial & non-commercial use)
+   Description: Professional portrait representing Interior Design Consultant
+
+26. Team Member 4: Renovation Specialist (Illustrative Stock Portrait)
+   File: assets/images/about/team/team-member-4.jpg
+   Source URL: https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d
+   Credit: Joseph Gonzalez on Unsplash
+   License: Unsplash License (Free commercial & non-commercial use)
+   Description: Professional portrait representing Renovation Specialist
+
+27. Project 11: Modern Exterior Makeover (Design Inspiration)
+   File: assets/images/projects/project-11-exterior-makeover.jpg
+   Source URL: https://images.unsplash.com/photo-1580587771525-78b9dba3b914
+   Credit: Tierra Mallorca on Unsplash
+   License: Unsplash License (Free commercial & non-commercial use)
+   Category: Exterior Painting
+   Description: Modern residential exterior with refreshed wall paint and clean architectural finishing
+
+28. Project 12: Contemporary Living Space (Design Inspiration)
+   File: assets/images/projects/project-12-contemporary-living.jpg
+   Source URL: https://images.unsplash.com/photo-1617806118233-18e1de247200
+   Credit: Spacejoy on Unsplash
+   License: Unsplash License (Free commercial & non-commercial use)
+   Category: Renovations
+   Description: Modern living room with renewed wall finishes, refined interiors and warm lighting
+
+29. Registration Page Architectural Visual
+   File: assets/images/login/register-home.jpg
+   Source URL: https://images.unsplash.com/photo-1600607687920-4e2a09cf159d
+   Credit: R Architecture on Unsplash
+   License: Unsplash License (Free commercial & non-commercial use)
+   Description: Sunlit, high-end renovated home interior with warm oak finishes and serene natural daylight
+
+30. About Page Photographic Hero Background
+   File: assets/images/hero/hero-about.jpg
+   Source URL: https://images.unsplash.com/photo-1600585154340-be6161a56a0c
+   Credit: R Architecture on Unsplash
+   License: Unsplash License (Free commercial & non-commercial use)
+   Description: Elegant renovated luxury residential interior with warm architectural finishes and natural lighting
+
+31. Services Page Photographic Hero Background
+   File: assets/images/hero/hero-services.jpg
+   Source URL: https://images.unsplash.com/photo-1562259949-e8e7689d7828
+   Credit: Roselyn Tirado on Unsplash
+   License: Unsplash License (Free commercial & non-commercial use)
+   Description: Professional painter applying clean coat with roller in modern interior
+
+32. Projects Page Photographic Hero Background
+   File: assets/images/hero/hero-projects.jpg
+   Source URL: https://images.unsplash.com/photo-1600596542815-ffad4c1539a9
+   Credit: R Architecture on Unsplash
+   License: Unsplash License (Free commercial & non-commercial use)
+   Description: Completed modern architectural residence exterior with pristine paintwork and landscaped entryway
+
+33. Pricing Page Photographic Hero Background
+   File: assets/images/hero/hero-pricing.jpg
+   Source URL: https://images.unsplash.com/photo-1600607687939-ce8a6c25118c
+   Credit: R Architecture on Unsplash
+   License: Unsplash License (Free commercial & non-commercial use)
+   Description: Bright contemporary residential interior with pristine architectural finishes and elegant kitchen layout
+
+34. Contact Page Photographic Hero Background
+   File: assets/images/hero/hero-contact.jpg
+   Source URL: https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b
+   Credit: R Architecture on Unsplash
+   License: Unsplash License (Free commercial & non-commercial use)
+   Description: Inviting modern residential home entrance and facade with clean architectural lines

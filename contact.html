@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EVERCOAT | Contact Us & Free Quotation Request</title>
+  <meta name="description" content="Request a free on-site painting inspection and itemized quotation from EVERCOAT contractors in Austin, Texas.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            forest: {
+              DEFAULT: '#29483B',
+              50: '#F2F6F4',
+              100: '#E1EBE6',
+              200: '#C3D7CD',
+              500: '#29483B',
+              600: '#233E32',
+              700: '#1D332A',
+              800: '#172922',
+              900: '#0F1A15',
+            },
+            charcoal: {
+              DEFAULT: '#242A27',
+              50: '#F5F6F5',
+              100: '#E6E8E6',
+              700: '#2D3531',
+              800: '#242A27',
+              900: '#1A1E1C',
+            },
+            ivory: {
+              DEFAULT: '#F7F5EF',
+              100: '#FAF9F5',
+              200: '#F1EFE6',
+            },
+            terracotta: {
+              DEFAULT: '#C77D5A',
+              hover: '#B56C49',
+              light: '#F8EBE5',
+            },
+            sage: {
+              DEFAULT: '#A7B7A5',
+              light: '#D3DDD1',
+            },
+            lightgrey: '#E8E8E2'
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Inter"', 'system-ui', '-apple-system', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Styles & Theme Initializer -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/theme.js"></script>
+</head>
+<body class="bg-ivory text-charcoal dark:bg-charcoal-900 dark:text-ivory antialiased selection:bg-terracotta selection:text-white">
+
+  <!-- ========================================================================
+       GLOBAL NAVIGATION BAR
+       ======================================================================== -->
+  <header class="sticky top-0 z-50 w-full transition-all duration-300 border-b border-charcoal/10 dark:border-charcoal-700/60 bg-ivory/95 dark:bg-charcoal-900/95 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo & Identity -->
+        <a href="index.html" class="flex items-center gap-3 group focus:outline-none" aria-label="EVERCOAT Home">
+          <div class="w-10 h-10 rounded-lg bg-forest dark:bg-forest-600 flex items-center justify-center text-ivory shadow-sm group-hover:bg-terracotta transition-colors duration-300">
+            <i data-lucide="paintbrush" class="w-5 h-5 text-white"></i>
+          </div>
+          <div>
+            <span class="font-serif text-2xl font-bold tracking-wider text-forest dark:text-ivory block leading-none">EVERCOAT</span>
+            <span class="text-[10px] tracking-widest uppercase font-medium text-charcoal/60 dark:text-sage block mt-1">Contractor Studio</span>
+          </div>
+        </a>
+
+        <!-- Center Navigation Links (Desktop) -->
+        <nav class="hidden lg:flex items-center gap-1 xl:gap-2">
+          
+          <!-- Home Navigation Item with Dropdown -->
+          <div class="relative group/home" id="home-dropdown-container">
+            <button 
+              type="button" 
+              id="home-dropdown-btn" 
+              aria-expanded="false" 
+              aria-haspopup="true"
+              class="nav-link inline-flex items-center gap-1.5 px-2.5 xl:px-3 py-2 text-xs xl:text-sm font-medium rounded-md transition-colors hover:text-forest dark:hover:text-sage focus:outline-none"
+            >
+              <span>Home</span>
+              <svg class="w-4 h-4 transition-transform duration-200 dropdown-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            
+            <!-- Dropdown Menu -->
+            <div 
+              id="home-dropdown-menu" 
+              class="hidden absolute top-full left-0 rtl:left-auto rtl:right-0 pt-2 z-50 min-w-[160px]"
+            >
+              <div class="py-2 rounded-xl bg-white dark:bg-charcoal-800 shadow-xl border border-charcoal/10 dark:border-charcoal-700 overflow-hidden">
+                <a 
+                  href="index.html" 
+                  class="home-sub-link flex items-center gap-2.5 px-4 py-2 text-xs sm:text-sm font-medium text-charcoal/80 dark:text-ivory/80 hover:bg-forest/10 hover:text-forest dark:hover:bg-charcoal-700 dark:hover:text-sage transition"
+                  data-page="index.html"
+                >
+                  <span class="w-1.5 h-1.5 rounded-full bg-transparent sub-dot"></span>
+                  <span>Home 1</span>
+                </a>
+                <a 
+                  href="home-2.html" 
+                  class="home-sub-link flex items-center gap-2.5 px-4 py-2 text-xs sm:text-sm font-medium text-charcoal/80 dark:text-ivory/80 hover:bg-forest/10 hover:text-forest dark:hover:bg-charcoal-700 dark:hover:text-sage transition"
+                  data-page="home-2.html"
+                >
+                  <span class="w-1.5 h-1.5 rounded-full bg-transparent sub-dot"></span>
+                  <span>Home 2</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a href="about.html" class="nav-link px-2.5 xl:px-3 py-2 text-xs xl:text-sm font-medium rounded-md transition-colors hover:text-forest dark:hover:text-sage">About</a>
+          <a href="services.html" class="nav-link px-2.5 xl:px-3 py-2 text-xs xl:text-sm font-medium rounded-md transition-colors hover:text-forest dark:hover:text-sage">Services</a>
+          <a href="projects.html" class="nav-link px-2.5 xl:px-3 py-2 text-xs xl:text-sm font-medium rounded-md transition-colors hover:text-forest dark:hover:text-sage">Projects</a>
+          <a href="pricing.html" class="nav-link px-2.5 xl:px-3 py-2 text-xs xl:text-sm font-medium rounded-md transition-colors hover:text-forest dark:hover:text-sage">Pricing</a>
+          <a href="contact.html" class="nav-link px-2.5 xl:px-3 py-2 text-xs xl:text-sm font-medium rounded-md transition-colors hover:text-forest dark:hover:text-sage">Contact</a>
+        </nav>
+
+        <!-- Right Utilities & Action CTAs -->
+        <div class="flex items-center gap-1.5 sm:gap-2">
+          <!-- RTL/LTR Toggle -->
+          <button type="button" class="dir-toggle-btn w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-xl border border-charcoal/20 dark:border-charcoal-700 hover:bg-forest/10 dark:hover:bg-charcoal-800 text-charcoal dark:text-ivory transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-forest/40 dark:focus:ring-sage/40" title="Switch text direction (Current: LTR)" aria-label="Switch text direction">
+            <i data-lucide="arrow-left-right" class="w-4 h-4"></i>
+          </button>
+
+          <!-- Light/Dark Mode Toggle -->
+          <button type="button" class="theme-toggle-btn w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-xl border border-charcoal/20 dark:border-charcoal-700 hover:bg-forest/10 dark:hover:bg-charcoal-800 text-charcoal dark:text-ivory transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-forest/40 dark:focus:ring-sage/40" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+            <i data-lucide="moon" class="theme-icon-dark w-4 h-4"></i>
+            <i data-lucide="sun" class="theme-icon-light w-4 h-4"></i>
+          </button>
+
+          <!-- Login Link with Consistent Border -->
+          <a href="login.html" class="hidden sm:inline-flex items-center gap-1.5 h-9 sm:h-10 px-3 rounded-xl border border-charcoal/20 dark:border-charcoal-700 hover:bg-forest/10 dark:hover:bg-charcoal-800 text-xs sm:text-sm font-semibold text-forest dark:text-ivory hover:text-terracotta dark:hover:text-sage transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-forest/40 dark:focus:ring-sage/40">
+            <i data-lucide="user" class="w-4 h-4"></i>
+            <span>Login</span>
+          </a>
+
+          <!-- Free Quote CTA Button (Visible on xl: and also on mobile drawer) -->
+          <a href="contact.html" class="hidden md:inline-flex lg:hidden xl:inline-flex items-center gap-2 h-9 sm:h-10 px-3.5 xl:px-4 rounded-xl bg-forest hover:bg-forest-600 text-white font-semibold text-xs sm:text-sm shadow-sm hover:shadow transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-forest/50">
+            <span>Get a Free Quote</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 icon-flip-rtl"></i>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button type="button" id="mobile-menu-btn" class="lg:hidden w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-xl text-charcoal dark:text-ivory hover:bg-forest/10 dark:hover:bg-charcoal-800 focus:outline-none" aria-label="Toggle navigation menu" aria-expanded="false">
+            <i data-lucide="menu" class="icon-menu w-6 h-6"></i>
+            <i data-lucide="x" class="icon-close w-6 h-6 hidden"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden border-b border-charcoal/10 dark:border-charcoal-700 bg-ivory dark:bg-charcoal-900 px-4 pt-2 pb-6 space-y-2">
+      <!-- Mobile Home Accordion -->
+      <div class="space-y-1">
+        <button 
+          type="button" 
+          id="mobile-home-btn" 
+          aria-expanded="false" 
+          class="w-full flex items-center justify-between px-3 py-2 rounded-md text-base font-medium text-charcoal/80 dark:text-ivory/80 hover:bg-forest/10 dark:hover:bg-charcoal-800 transition focus:outline-none"
+        >
+          <span>Home</span>
+          <svg id="mobile-home-chevron" class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="mobile-home-submenu" class="hidden pl-4 rtl:pl-0 rtl:pr-4 space-y-1 border-l-2 rtl:border-l-0 rtl:border-r-2 border-forest/30 dark:border-sage/40 ml-2 rtl:ml-0 rtl:mr-2">
+          <a href="index.html" class="nav-link block px-3 py-2 rounded-md text-sm font-medium hover:bg-forest/10 dark:hover:bg-charcoal-800 text-charcoal/80 dark:text-ivory/80">
+            Home 1
+          </a>
+          <a href="home-2.html" class="nav-link block px-3 py-2 rounded-md text-sm font-medium hover:bg-forest/10 dark:hover:bg-charcoal-800 text-charcoal/80 dark:text-ivory/80">
+            Home 2
+          </a>
+        </div>
+      </div>
+      <a href="about.html" class="nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-forest/10 dark:hover:bg-charcoal-800">About</a>
+      <a href="services.html" class="nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-forest/10 dark:hover:bg-charcoal-800">Services</a>
+      <a href="projects.html" class="nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-forest/10 dark:hover:bg-charcoal-800">Projects Gallery</a>
+      <a href="pricing.html" class="nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-forest/10 dark:hover:bg-charcoal-800">Pricing & Estimates</a>
+      <a href="contact.html" class="nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-forest/10 dark:hover:bg-charcoal-800">Contact Us</a>
+      <div class="pt-3 border-t border-charcoal/10 dark:border-charcoal-700 flex items-center justify-between">
+        <a href="login.html" class="inline-flex items-center gap-2 text-sm font-medium text-forest dark:text-sage">
+          <i data-lucide="user" class="w-4 h-4"></i>
+          <span>Account Login</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ========================================================================
+       PAGE HERO: FULL-WIDTH PHOTOGRAPHIC HERO (CONTACT US)
+       ======================================================================== -->
+  <section class="relative min-h-[440px] sm:min-h-[480px] lg:min-h-[520px] flex items-center overflow-hidden border-b border-charcoal/10 dark:border-charcoal-800">
+    <!-- Full-Width Background Photograph -->
+    <img 
+      src="assets/images/hero/hero-contact.jpg" 
+      alt="Welcoming contemporary residential property entrance with clean architectural lines" 
+      class="absolute inset-0 w-full h-full object-cover object-center"
+      loading="eager"
+    >
+
+    <!-- Dark Gradient Overlay for Readability -->
+    <div class="absolute inset-0 bg-gradient-to-r rtl:bg-gradient-to-l from-black/85 via-black/70 to-black/45 dark:from-black/90 dark:via-black/80 dark:to-black/55"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-black/30 sm:hidden"></div>
+
+    <!-- Hero Content Container -->
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24 w-full">
+      <div class="max-w-3xl lg:max-w-5xl space-y-4">
+        
+        <!-- Breadcrumb Navigation -->
+        <nav aria-label="Breadcrumb" class="flex items-center gap-2 text-xs sm:text-sm text-ivory/70">
+          <a href="index.html" class="hover:text-white transition">Home</a>
+          <span class="text-ivory/40">/</span>
+          <span class="text-sage font-medium" aria-current="page">Contact</span>
+        </nav>
+
+        <!-- Small Category Tag -->
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-ivory text-xs font-semibold uppercase tracking-wider">
+          <span class="w-2 h-2 rounded-full bg-terracotta"></span>
+          <span>Connect With Us</span>
+        </div>
+
+        <!-- Main Heading -->
+        <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight drop-shadow-sm">
+          Let's Talk About Your Project
+        </h1>
+
+        <!-- Supporting Description -->
+        <p class="text-base sm:text-lg lg:text-xl text-ivory/90 leading-relaxed font-light max-w-2xl">
+          Speak directly with our Austin painting estimators or submit your project details below for an itemized, transparent estimate. We respond to all inquiries within 24 business hours.
+        </p>
+
+        <!-- CTAs -->
+        <div class="pt-2 flex flex-wrap items-center gap-4">
+          <a 
+            href="#quote-form" 
+            class="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold text-white bg-forest hover:bg-forest-600 rounded-xl shadow-md hover:shadow-lg transition duration-200"
+          >
+            <span>Request a Quote</span>
+            <i data-lucide="arrow-down" class="w-4 h-4"></i>
+          </a>
+          <a 
+            href="tel:+15125550198" 
+            class="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold text-white bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/25 rounded-xl transition duration-200"
+          >
+            <i data-lucide="phone" class="w-4 h-4 text-sage"></i>
+            <span>+1 (512) 555-0198</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       MAIN CONTACT & QUOTE SECTION
+       ======================================================================== -->
+  <section class="py-16 bg-white dark:bg-charcoal-800 transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Left Column: Business Details & Studio Info -->
+        <div class="lg:col-span-5 space-y-8">
+          
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-terracotta">Direct Contact</span>
+            <h2 class="font-serif text-3xl font-bold text-forest dark:text-ivory mt-1 mb-3">Contractor Studio</h2>
+            <p class="text-sm text-charcoal/70 dark:text-ivory/70 leading-relaxed">
+              We respond to all project inquiries within 24 business hours to book an in-person site assessment.
+            </p>
+            <p class="text-xs text-charcoal/50 dark:text-ivory/50 mt-1 italic">
+              *Sample business details for demonstration purposes.
+            </p>
+          </div>
+
+          <!-- Cards -->
+          <div class="space-y-4">
+            
+            <!-- Phone -->
+            <div class="p-5 rounded-2xl bg-ivory dark:bg-charcoal-900 border border-charcoal/10 dark:border-charcoal-700 flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-forest/10 dark:bg-forest-900/50 text-forest dark:text-sage flex items-center justify-center shrink-0">
+                <i data-lucide="phone" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold uppercase tracking-wider text-charcoal/60 dark:text-ivory/60">Phone Inquiries</p>
+                <a href="tel:+15125550198" class="font-semibold text-forest dark:text-sage text-base hover:text-terracotta transition">
+                  +1 (512) 555-0198
+                </a>
+                <p class="text-xs text-charcoal/60 dark:text-ivory/60 mt-0.5">Direct line for consultations, quotes & touchups</p>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="p-5 rounded-2xl bg-ivory dark:bg-charcoal-900 border border-charcoal/10 dark:border-charcoal-700 flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-forest/10 dark:bg-forest-900/50 text-forest dark:text-sage flex items-center justify-center shrink-0">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold uppercase tracking-wider text-charcoal/60 dark:text-ivory/60">Email Address</p>
+                <a href="mailto:hello@evercoat.example" class="font-semibold text-forest dark:text-sage text-base hover:text-terracotta transition">
+                  hello@evercoat.example
+                </a>
+                <p class="text-xs text-charcoal/60 dark:text-ivory/60 mt-0.5">Send floor plans and architectural drawings</p>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="p-5 rounded-2xl bg-ivory dark:bg-charcoal-900 border border-charcoal/10 dark:border-charcoal-700 flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-forest/10 dark:bg-forest-900/50 text-forest dark:text-sage flex items-center justify-center shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold uppercase tracking-wider text-charcoal/60 dark:text-ivory/60">Studio Address</p>
+                <p class="font-semibold text-forest dark:text-ivory text-base">
+                  Austin, Texas, USA
+                </p>
+                <p class="text-xs text-charcoal/60 dark:text-ivory/60 mt-0.5">Serving Greater Austin, Travis County, West Lake Hills & surrounding communities</p>
+              </div>
+            </div>
+
+            <!-- Business Hours -->
+            <div class="p-5 rounded-2xl bg-ivory dark:bg-charcoal-900 border border-charcoal/10 dark:border-charcoal-700 flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-forest/10 dark:bg-forest-900/50 text-forest dark:text-sage flex items-center justify-center shrink-0">
+                <i data-lucide="clock" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold uppercase tracking-wider text-charcoal/60 dark:text-ivory/60">Business Hours</p>
+                <p class="font-semibold text-forest dark:text-ivory text-base">
+                  Monday – Saturday: 9:00 AM – 6:00 PM CST
+                </p>
+                <p class="text-xs text-charcoal/60 dark:text-ivory/60 mt-0.5">Sundays reserved for scheduled site walkthroughs</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Studio Location Visual Card -->
+          <div class="rounded-2xl overflow-hidden border border-charcoal/10 dark:border-charcoal-700 bg-ivory dark:bg-charcoal-900 p-6 text-center space-y-2">
+            <div class="flex items-center justify-center gap-2 text-forest dark:text-sage font-serif font-bold">
+              <i data-lucide="navigation" class="w-5 h-5 text-terracotta"></i>
+              <span>Austin Central Studio &amp; Depot</span>
+            </div>
+            <p class="text-xs text-charcoal/60 dark:text-ivory/60">
+              Modern inventory workshop &amp; client consultation suite located off Congress Ave in Downtown Austin.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Interactive Free Quote Request Form -->
+        <div class="lg:col-span-7">
+          <div class="bg-ivory dark:bg-charcoal-900 p-8 sm:p-10 rounded-3xl border border-charcoal/10 dark:border-charcoal-700 shadow-md">
+            
+            <div class="mb-8">
+              <h3 class="font-serif text-2xl sm:text-3xl font-bold text-forest dark:text-ivory">Request a Free Quote</h3>
+              <p class="text-xs sm:text-sm text-charcoal/70 dark:text-ivory/70 mt-1">
+                Fill in your project specifications to receive an accurate, itemized estimate.
+              </p>
+            </div>
+
+            <!-- Team Member Referral Banner (Populated by interactions.js when ?team=... is present) -->
+            <div id="team-referral-banner" class="hidden mb-6 p-4 rounded-2xl bg-forest-50 dark:bg-forest-900/40 border border-forest/20 dark:border-forest-700/60 flex items-start justify-between gap-3 transition-all">
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-forest text-white flex items-center justify-center shrink-0 mt-0.5">
+                  <i data-lucide="user-check" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <p class="text-xs font-bold uppercase tracking-wider text-forest dark:text-sage">Specialist Consultation Request</p>
+                  <p id="team-referral-text" class="text-xs sm:text-sm text-charcoal dark:text-ivory mt-0.5"></p>
+                </div>
+              </div>
+              <button type="button" id="team-referral-dismiss" class="text-charcoal/50 hover:text-charcoal dark:text-ivory/50 dark:hover:text-ivory p-1 rounded-md text-xs" title="Dismiss notice">
+                <i data-lucide="x" class="w-4 h-4"></i>
+              </button>
+            </div>
+
+            <!-- Error Banner Container (Populated by interactions.js) -->
+            <div id="form-error-banner" class="hidden mb-6"></div>
+
+            <!-- Success Banner Container (Populated by interactions.js) -->
+            <div id="form-success-banner" class="hidden mb-6"></div>
+
+            <!-- Form -->
+            <form id="quote-form" class="space-y-6" novalidate>
+              
+              <!-- Row 1: Name & Email -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="fullName" class="block text-xs font-bold uppercase tracking-wider text-charcoal/80 dark:text-ivory/80 mb-2">
+                    Full Name <span class="text-terracotta">*</span>
+                  </label>
+                  <input 
+                    type="text" 
+                    id="fullName" 
+                    name="fullName" 
+                    required 
+                    placeholder="e.g. Ramesh Kumar"
+                    class="w-full px-4 py-3 rounded-xl bg-white dark:bg-charcoal-800 border border-charcoal/15 dark:border-charcoal-700 focus:outline-none focus:ring-2 focus:ring-forest text-sm text-charcoal dark:text-ivory transition"
+                  >
+                </div>
+
+                <div>
+                  <label for="email" class="block text-xs font-bold uppercase tracking-wider text-charcoal/80 dark:text-ivory/80 mb-2">
+                    Email Address <span class="text-terracotta">*</span>
+                  </label>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    required 
+                    placeholder="e.g. ramesh@example.com"
+                    class="w-full px-4 py-3 rounded-xl bg-white dark:bg-charcoal-800 border border-charcoal/15 dark:border-charcoal-700 focus:outline-none focus:ring-2 focus:ring-forest text-sm text-charcoal dark:text-ivory transition"
+                  >
+                </div>
+              </div>
+
+              <!-- Row 2: Phone Number & Property Location -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="phone" class="block text-xs font-bold uppercase tracking-wider text-charcoal/80 dark:text-ivory/80 mb-2">
+                    Phone Number <span class="text-terracotta">*</span>
+                  </label>
+                  <input 
+                    type="tel" 
+                    id="phone" 
+                    name="phone" 
+                    required 
+                    placeholder="e.g. +1 (512) 555-0198"
+                    class="w-full px-4 py-3 rounded-xl bg-white dark:bg-charcoal-800 border border-charcoal/15 dark:border-charcoal-700 focus:outline-none focus:ring-2 focus:ring-forest text-sm text-charcoal dark:text-ivory transition"
+                  >
+                </div>
+
+                <div>
+                  <label for="propertyLocation" class="block text-xs font-bold uppercase tracking-wider text-charcoal/80 dark:text-ivory/80 mb-2">
+                    Property Location / Area
+                  </label>
+                  <input 
+                    type="text" 
+                    id="propertyLocation" 
+                    name="propertyLocation" 
+                    placeholder="e.g. Downtown Austin, West Lake Hills"
+                    class="w-full px-4 py-3 rounded-xl bg-white dark:bg-charcoal-800 border border-charcoal/15 dark:border-charcoal-700 focus:outline-none focus:ring-2 focus:ring-forest text-sm text-charcoal dark:text-ivory transition"
+                  >
+                </div>
+              </div>
+
+              <!-- Row 3: Property Type & Service Required -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="propertyType" class="block text-xs font-bold uppercase tracking-wider text-charcoal/80 dark:text-ivory/80 mb-2">
+                    Property Type
+                  </label>
+                  <select 
+                    id="propertyType" 
+                    name="propertyType" 
+                    class="w-full px-4 py-3 rounded-xl bg-white dark:bg-charcoal-800 border border-charcoal/15 dark:border-charcoal-700 focus:outline-none focus:ring-2 focus:ring-forest text-sm text-charcoal dark:text-ivory transition"
+                  >
+                    <option value="Apartment">Apartment</option>
+                    <option value="Independent House">Independent House</option>
+                    <option value="Villa">Villa</option>
+                    <option value="Commercial Property">Commercial Property</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="serviceRequired" class="block text-xs font-bold uppercase tracking-wider text-charcoal/80 dark:text-ivory/80 mb-2">
+                    Service Required <span class="text-terracotta">*</span>
+                  </label>
+                  <select 
+                    id="serviceRequired" 
+                    name="serviceRequired" 
+                    required 
+                    class="w-full px-4 py-3 rounded-xl bg-white dark:bg-charcoal-800 border border-charcoal/15 dark:border-charcoal-700 focus:outline-none focus:ring-2 focus:ring-forest text-sm text-charcoal dark:text-ivory transition"
+                  >
+                    <option value="">Select a service...</option>
+                    <option value="Interior Painting">Interior Painting</option>
+                    <option value="Exterior Painting">Exterior Painting</option>
+                    <option value="Texture Finishes">Texture Finishes</option>
+                    <option value="Minor Renovations">Minor Renovations</option>
+                    <option value="Multiple Services">Multiple Services</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Row 4: Approximate Area & Preferred Start Date -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="approxArea" class="block text-xs font-bold uppercase tracking-wider text-charcoal/80 dark:text-ivory/80 mb-2">
+                    Approximate Area (Sq.Ft)
+                  </label>
+                  <input 
+                    type="text" 
+                    id="approxArea" 
+                    name="approxArea" 
+                    placeholder="e.g. 1,400 sq.ft (or 3BHK)"
+                    class="w-full px-4 py-3 rounded-xl bg-white dark:bg-charcoal-800 border border-charcoal/15 dark:border-charcoal-700 focus:outline-none focus:ring-2 focus:ring-forest text-sm text-charcoal dark:text-ivory transition"
+                  >
+                </div>
+
+                <div>
+                  <label for="preferredDate" class="block text-xs font-bold uppercase tracking-wider text-charcoal/80 dark:text-ivory/80 mb-2">
+                    Preferred Start Date
+                  </label>
+                  <input 
+                    type="date" 
+                    id="preferredDate" 
+                    name="preferredDate" 
+                    class="w-full px-4 py-3 rounded-xl bg-white dark:bg-charcoal-800 border border-charcoal/15 dark:border-charcoal-700 focus:outline-none focus:ring-2 focus:ring-forest text-sm text-charcoal dark:text-ivory transition"
+                  >
+                </div>
+              </div>
+
+              <!-- Row 5: Budget Range (Illustrative INR Ranges) -->
+              <div>
+                <label for="budgetRange" class="block text-xs font-bold uppercase tracking-wider text-charcoal/80 dark:text-ivory/80 mb-2">
+                  Estimated Budget Range (USD)
+                </label>
+                <select 
+                  id="budgetRange" 
+                  name="budgetRange" 
+                  class="w-full px-4 py-3 rounded-xl bg-white dark:bg-charcoal-800 border border-charcoal/15 dark:border-charcoal-700 focus:outline-none focus:ring-2 focus:ring-forest text-sm text-charcoal dark:text-ivory transition"
+                >
+                  <option value="Under $2,500">Under $2,500</option>
+                  <option value="$2,500 - $5,000" selected>$2,500 - $5,000</option>
+                  <option value="$5,000 - $10,000">$5,000 - $10,000</option>
+                  <option value="$10,000 - $25,000">$10,000 - $25,000</option>
+                  <option value="$25,000+">$25,000+</option>
+                </select>
+              </div>
+
+              <!-- Row 6: Project Description -->
+              <div>
+                <label for="projectDescription" class="block text-xs font-bold uppercase tracking-wider text-charcoal/80 dark:text-ivory/80 mb-2">
+                  Project Description & Specific Requirements
+                </label>
+                <textarea 
+                  id="projectDescription" 
+                  name="projectDescription" 
+                  rows="4" 
+                  placeholder="Tell us about the current wall conditions, color preferences, whether the home is currently occupied, or special finish needs..."
+                  class="w-full px-4 py-3 rounded-xl bg-white dark:bg-charcoal-800 border border-charcoal/15 dark:border-charcoal-700 focus:outline-none focus:ring-2 focus:ring-forest text-sm text-charcoal dark:text-ivory transition resize-y"
+                ></textarea>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="flex flex-wrap items-center gap-4 pt-2">
+                <button 
+                  type="submit" 
+                  class="px-8 py-3.5 rounded-xl bg-forest hover:bg-forest-600 text-white font-semibold text-sm transition shadow-md hover:shadow-lg flex items-center gap-2"
+                >
+                  <span>Submit Quote Request</span>
+                  <i data-lucide="send" class="w-4 h-4 icon-flip-rtl"></i>
+                </button>
+
+                <button 
+                  type="reset" 
+                  class="px-6 py-3.5 rounded-xl bg-lightgrey/60 dark:bg-charcoal-700 hover:bg-lightgrey text-charcoal dark:text-ivory font-medium text-sm transition"
+                >
+                  Clear Form
+                </button>
+              </div>
+
+              <p class="text-[11px] text-charcoal/50 dark:text-ivory/50">
+                *Simulated demonstration: Submitted quotes are stored locally in your browser storage.
+              </p>
+
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       SECTION 3: FIND US (EMBEDDED GOOGLE MAP & LOCATION DETAILS)
+       ======================================================================== -->
+  <section id="location-map" class="py-16 sm:py-20 bg-ivory dark:bg-charcoal-900 border-t border-charcoal/10 dark:border-charcoal-700/60 transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12 space-y-2">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-forest/10 dark:bg-forest-900/50 text-forest dark:text-sage text-xs font-semibold uppercase tracking-wider">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-terracotta"></i>
+          <span>Our Location</span>
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest dark:text-ivory">Find Us</h2>
+        <p class="text-sm sm:text-base text-charcoal/75 dark:text-ivory/75 leading-relaxed max-w-xl mx-auto">
+          Visit us or explore our location on the map.
+        </p>
+      </div>
+
+      <!-- 2-Column Responsive Layout -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <!-- Left: Studio Details Card -->
+        <div class="lg:col-span-5 bg-white dark:bg-charcoal-800 p-8 sm:p-10 rounded-3xl border border-charcoal/10 dark:border-charcoal-700 shadow-sm space-y-6">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-terracotta">Headquarters &amp; Depot</span>
+            <h3 class="font-serif text-2xl font-bold text-forest dark:text-ivory mt-1">EVERCOAT Contractor Studio</h3>
+            <p class="text-xs text-charcoal/60 dark:text-ivory/60 mt-1">Testing facility, material storage, and client consultation suite</p>
+          </div>
+
+          <div class="space-y-4 text-sm">
+            <div class="flex items-start gap-3">
+              <i data-lucide="map-pin" class="w-5 h-5 text-forest dark:text-sage shrink-0 mt-0.5"></i>
+              <div>
+                <p class="font-semibold text-charcoal dark:text-ivory">Street Address</p>
+                <p class="text-charcoal/70 dark:text-ivory/70 text-xs sm:text-sm mt-0.5">200 Congress Avenue, Suite 400, Austin, TX 78701, USA</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <i data-lucide="phone" class="w-5 h-5 text-forest dark:text-sage shrink-0 mt-0.5"></i>
+              <div>
+                <p class="font-semibold text-charcoal dark:text-ivory">Direct Telephone</p>
+                <a href="tel:+15125550198" class="text-forest dark:text-sage text-xs sm:text-sm hover:text-terracotta transition font-medium mt-0.5 block">+1 (512) 555-0198</a>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <i data-lucide="clock" class="w-5 h-5 text-forest dark:text-sage shrink-0 mt-0.5"></i>
+              <div>
+                <p class="font-semibold text-charcoal dark:text-ivory">Business Hours</p>
+                <p class="text-charcoal/70 dark:text-ivory/70 text-xs sm:text-sm mt-0.5">Monday – Saturday: 9:00 AM – 6:00 PM CST (Sundays by appointment)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-charcoal/10 dark:border-charcoal-700/60 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <a 
+              href="https://maps.google.com/?q=200+Congress+Ave,+Austin,+TX+78701" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-forest hover:bg-forest-600 text-white font-semibold text-xs sm:text-sm transition shadow-sm hover:shadow focus:outline-none focus:ring-2 focus:ring-forest/50"
+            >
+              <span>Get Directions</span>
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+            <span class="text-xs text-charcoal/50 dark:text-ivory/50 italic">
+              Opens Google Maps
+            </span>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-ivory/80 dark:bg-charcoal-900/60 border border-charcoal/10 dark:border-charcoal-700 text-[11px] text-charcoal/60 dark:text-ivory/60 leading-relaxed">
+            <strong>Configuration Notice:</strong> Address and map coordinates can be customized in <code class="font-mono text-terracotta">EVERCOAT_LOCATION_CONFIG</code> inside <code class="font-mono text-terracotta">interactions.js</code>.
+          </div>
+        </div>
+
+        <!-- Right: Responsive Embedded Google Map -->
+        <div class="lg:col-span-7">
+          <div class="rounded-3xl overflow-hidden border border-charcoal/15 dark:border-charcoal-700 shadow-lg h-[380px] sm:h-[440px] bg-charcoal/5 dark:bg-charcoal-800">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110204.74637213491!2d-97.79639535!3d30.267153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b599a0cc032f%3A0x5d9b464bd469d57a!2sAustin%2C%20TX!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="eager" 
+              referrerpolicy="no-referrer-when-downgrade" 
+              title="EVERCOAT Studio Location Map"
+              class="w-full h-full"
+            ></iframe>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       SECTION 4: FAQ SECTION
+       ======================================================================== -->
+  <section class="py-16 bg-ivory dark:bg-charcoal-900 transition-colors">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-12 space-y-2">
+        <span class="text-xs font-bold uppercase tracking-widest text-terracotta">Inspection & Process</span>
+        <h2 class="font-serif text-3xl font-bold text-forest dark:text-ivory">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="space-y-4">
+        
+        <div class="faq-item rounded-xl border border-charcoal/15 dark:border-charcoal-700 bg-white dark:bg-charcoal-800 overflow-hidden">
+          <button type="button" class="faq-trigger w-full p-5 text-left flex items-center justify-between gap-4 font-serif font-bold text-forest dark:text-ivory text-base focus:outline-none">
+            <span>Is the on-site quotation visit completely free?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 shrink-0 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content px-5 pb-5 text-xs sm:text-sm text-charcoal/80 dark:text-ivory/80 leading-relaxed">
+            Yes. Our laser measurement and moisture inspection visit across Greater Austin is 100% complimentary and comes with zero commitment to proceed.
+          </div>
+        </div>
+
+        <div class="faq-item rounded-xl border border-charcoal/15 dark:border-charcoal-700 bg-white dark:bg-charcoal-800 overflow-hidden">
+          <button type="button" class="faq-trigger w-full p-5 text-left flex items-center justify-between gap-4 font-serif font-bold text-forest dark:text-ivory text-base focus:outline-none">
+            <span>Can you paint while the family continues living in the house?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 shrink-0 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content px-5 pb-5 text-xs sm:text-sm text-charcoal/80 dark:text-ivory/80 leading-relaxed">
+            Absolutely. Over 70% of our residential interior projects are executed while the house is occupied. We work room-by-room, mask all personal items, use odorless low-VOC paints, and clean thoroughly at the end of each day.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       SECTION 5: CLOSING CALL TO ACTION
+       ======================================================================== -->
+  <section class="py-16 lg:py-24 bg-forest text-white relative overflow-hidden">
+    <!-- Subtle Background Texture -->
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#F7F5EF_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"></div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 text-sage text-xs font-semibold tracking-wider uppercase">
+        <span class="w-2 h-2 rounded-full bg-terracotta"></span>
+        <span>Get Started Today</span>
+      </div>
+
+      <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-ivory max-w-3xl mx-auto leading-tight">
+        Ready to Transform Your Space?
+      </h2>
+
+      <p class="text-base sm:text-lg text-ivory/80 max-w-2xl mx-auto leading-relaxed">
+        Share your requirements with us and take the first step towards a better-looking space.
+      </p>
+
+      <div class="pt-4 flex flex-wrap items-center justify-center gap-4">
+        <a 
+          href="#quote-form" 
+          class="inline-flex items-center gap-2 px-8 py-3.5 text-sm font-semibold text-forest bg-ivory hover:bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-200 focus:outline-none focus:ring-2 focus:ring-ivory/50"
+        >
+          <span>Get Started</span>
+          <i data-lucide="arrow-up" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       GLOBAL FOOTER (SHARED)
+       ======================================================================== -->
+  <footer class="bg-charcoal text-ivory/90 transition-colors border-t border-charcoal-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
+        
+        <!-- Col 1: Brand -->
+        <div class="lg:col-span-4 space-y-4">
+          <a href="index.html" class="flex items-center gap-3 group focus:outline-none" aria-label="EVERCOAT Home">
+            <div class="w-10 h-10 rounded-lg bg-forest flex items-center justify-center text-ivory shadow-sm group-hover:bg-terracotta transition-colors duration-300">
+              <i data-lucide="paintbrush" class="w-5 h-5 text-white"></i>
+            </div>
+            <div>
+              <span class="font-serif text-2xl font-bold tracking-wider text-white block leading-none">EVERCOAT</span>
+              <span class="text-[10px] tracking-widest uppercase font-medium text-sage block mt-1">Contractor Studio</span>
+            </div>
+          </a>
+          <p class="text-sm text-ivory/70 max-w-sm leading-relaxed">
+            Professional Painting & Home Renovation Contractor. Thoughtful craftsmanship, dustless surface preparation, and enduring finishes.
+          </p>
+          <p class="text-xs text-sage font-medium italic">
+            "Every Wall. A New Beginning."
+          </p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="lg:col-span-2 space-y-3">
+          <h4 class="font-serif text-base font-semibold text-white">Quick Links</h4>
+          <ul class="space-y-2 text-sm text-ivory/75">
+            <li><a href="index.html" class="hover:text-terracotta transition">Home 1</a></li>
+            <li><a href="home-2.html" class="hover:text-terracotta transition">Home 2</a></li>
+            <li><a href="about.html" class="hover:text-terracotta transition">About</a></li>
+            <li><a href="services.html" class="hover:text-terracotta transition">Services</a></li>
+            <li><a href="projects.html" class="hover:text-terracotta transition">Projects Gallery</a></li>
+            <li><a href="pricing.html" class="hover:text-terracotta transition">Pricing & Estimates</a></li>
+            <li><a href="contact.html" class="hover:text-terracotta transition text-sage font-medium">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Contact Info -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="font-serif text-base font-semibold text-white">Contact & Studio</h4>
+          <ul class="space-y-2.5 text-sm text-ivory/75">
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="phone" class="w-4 h-4 text-sage shrink-0"></i>
+              <span>+1 (512) 555-0198</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="mail" class="w-4 h-4 text-sage shrink-0"></i>
+              <span>hello@evercoat.example</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="map-pin" class="w-4 h-4 text-sage shrink-0"></i>
+              <span>Austin, Texas, USA</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="clock" class="w-4 h-4 text-sage shrink-0"></i>
+              <span>Mon – Sat: 9:00 AM – 6:00 PM</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Follow Us / Connect With Us -->
+        <div class="lg:col-span-3 space-y-4">
+          <h4 class="font-serif text-base font-semibold text-white">Connect With Us</h4>
+          <p class="text-xs text-ivory/70 leading-relaxed">
+            Follow our latest renovations, colour inspiration, and before-and-after transformations.
+          </p>
+          <div class="flex items-center gap-3">
+            <!-- Instagram -->
+            <a href="#" class="social-link w-10 h-10 rounded-xl bg-charcoal-700/80 hover:bg-forest text-ivory/80 hover:text-white flex items-center justify-center transition-all duration-200 border border-charcoal-600/50 shadow-sm hover:scale-105" data-platform="instagram" aria-label="Follow EVERCOAT on Instagram" title="Instagram">
+              <svg class="w-4 h-4 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <!-- Facebook -->
+            <a href="#" class="social-link w-10 h-10 rounded-xl bg-charcoal-700/80 hover:bg-forest text-ivory/80 hover:text-white flex items-center justify-center transition-all duration-200 border border-charcoal-600/50 shadow-sm hover:scale-105" data-platform="facebook" aria-label="Follow EVERCOAT on Facebook" title="Facebook">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <!-- Pinterest -->
+            <a href="#" class="social-link w-10 h-10 rounded-xl bg-charcoal-700/80 hover:bg-forest text-ivory/80 hover:text-white flex items-center justify-center transition-all duration-200 border border-charcoal-600/50 shadow-sm hover:scale-105" data-platform="pinterest" aria-label="Follow EVERCOAT on Pinterest" title="Pinterest">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M12 0a12 12 0 0 0-4.37 23.18c-.06-.98-.12-2.48.02-3.55.13-.98.88-6.42.88-6.42s-.22-.44-.22-1.1c0-1.03.6-1.8 1.34-1.8.63 0 .94.47.94 1.04 0 .63-.4 1.58-.61 2.46-.17.73.37 1.33 1.1 1.33 1.32 0 2.33-1.4 2.33-3.41 0-1.78-1.28-3.03-3.11-3.03-2.27 0-3.6 1.7-3.6 3.46 0 .69.26 1.42.59 1.82.07.08.08.15.06.23-.06.27-.21.85-.24.97-.04.16-.13.2-.3.12-1.11-.52-1.8-2.14-1.8-3.45 0-2.8 2.04-5.38 5.88-5.38 3.09 0 5.48 2.2 5.48 5.14 0 3.07-1.93 5.54-4.62 5.54-.9 0-1.75-.47-2.04-1.03l-.56 2.12c-.2.78-.75 1.76-1.12 2.36A12 12 0 1 0 12 0z"/>
+              </svg>
+            </a>
+            <!-- YouTube -->
+            <a href="#" class="social-link w-10 h-10 rounded-xl bg-charcoal-700/80 hover:bg-forest text-ivory/80 hover:text-white flex items-center justify-center transition-all duration-200 border border-charcoal-600/50 shadow-sm hover:scale-105" data-platform="youtube" aria-label="Follow EVERCOAT on YouTube" title="YouTube">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55a3.016 3.016 0 0 0-2.122 2.136C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.55 9.376.55 9.376.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-10 mt-10 border-t border-charcoal-700 flex flex-col sm:flex-row items-center justify-between text-xs text-ivory/60 gap-4">
+        <p>&copy; <span class="current-year">2026</span> EVERCOAT. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-white transition">Privacy Policy</a>
+          <a href="#" class="hover:text-white transition">Terms & Conditions</a>
+          <a href="login.html" class="hover:text-white transition">Staff Demo Login</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       FLOATING BACK TO TOP BUTTON
+       ======================================================================== -->
+  <button 
+    type="button" 
+    id="back-to-top-btn" 
+    class="back-to-top fixed bottom-6 right-6 z-40 p-3 rounded-full bg-forest text-white shadow-xl hover:bg-forest-600 transition-all duration-300 opacity-0 pointer-events-none translate-y-4 focus:outline-none"
+    aria-label="Back to top of page"
+  >
+    <i data-lucide="arrow-up" class="w-5 h-5"></i>
+  </button>
+
+  <!-- JavaScript Modules -->
+  <script src="assets/js/interactions.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

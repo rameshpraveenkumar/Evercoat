@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EVERCOAT | Professional Painting & Home Renovation Contractor</title>
+  <meta name="description" content="EVERCOAT - Professional residential painting and complete home renovations. Transforming homes with craftsmanship and thoughtful design.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            forest: {
+              DEFAULT: '#29483B',
+              50: '#F2F6F4',
+              100: '#E1EBE6',
+              200: '#C3D7CD',
+              500: '#29483B',
+              600: '#233E32',
+              700: '#1D332A',
+              800: '#172922',
+              900: '#0F1A15',
+            },
+            charcoal: {
+              DEFAULT: '#242A27',
+              50: '#F5F6F5',
+              100: '#E6E8E6',
+              700: '#2D3531',
+              800: '#242A27',
+              900: '#1A1E1C',
+            },
+            ivory: {
+              DEFAULT: '#F7F5EF',
+              100: '#FAF9F5',
+              200: '#F1EFE6',
+            },
+            terracotta: {
+              DEFAULT: '#C77D5A',
+              hover: '#B56C49',
+              light: '#F8EBE5',
+            },
+            sage: {
+              DEFAULT: '#A7B7A5',
+              light: '#D3DDD1',
+            },
+            lightgrey: '#E8E8E2'
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Inter"', 'system-ui', '-apple-system', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Styles & Theme Initializer -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/theme.js"></script>
+</head>
+<body class="bg-ivory text-charcoal dark:bg-charcoal-900 dark:text-ivory antialiased selection:bg-terracotta selection:text-white">
+
+  <!-- ========================================================================
+       GLOBAL NAVIGATION BAR
+       ======================================================================== -->
+  <header class="sticky top-0 z-50 w-full transition-all duration-300 border-b border-charcoal/10 dark:border-charcoal-700/60 bg-ivory/95 dark:bg-charcoal-900/95 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo & Identity -->
+        <a href="index.html" class="flex items-center gap-3 group focus:outline-none" aria-label="EVERCOAT Home">
+          <div class="w-10 h-10 rounded-lg bg-forest dark:bg-forest-600 flex items-center justify-center text-ivory shadow-sm group-hover:bg-terracotta transition-colors duration-300">
+            <i data-lucide="paintbrush" class="w-5 h-5 text-white"></i>
+          </div>
+          <div>
+            <span class="font-serif text-2xl font-bold tracking-wider text-forest dark:text-ivory block leading-none">EVERCOAT</span>
+            <span class="text-[10px] tracking-widest uppercase font-medium text-charcoal/60 dark:text-sage block mt-1">Contractor Studio</span>
+          </div>
+        </a>
+
+        <!-- Center Navigation Links (Desktop) -->
+        <nav class="hidden lg:flex items-center gap-1 xl:gap-2">
+          
+          <!-- Home Navigation Item with Dropdown -->
+          <div class="relative group/home" id="home-dropdown-container">
+            <button 
+              type="button" 
+              id="home-dropdown-btn" 
+              aria-expanded="false" 
+              aria-haspopup="true"
+              class="nav-link inline-flex items-center gap-1.5 px-2.5 xl:px-3 py-2 text-xs xl:text-sm font-medium rounded-md transition-colors hover:text-forest dark:hover:text-sage focus:outline-none"
+            >
+              <span>Home</span>
+              <svg class="w-4 h-4 transition-transform duration-200 dropdown-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            
+            <!-- Dropdown Menu -->
+            <div 
+              id="home-dropdown-menu" 
+              class="hidden absolute top-full left-0 rtl:left-auto rtl:right-0 pt-2 z-50 min-w-[160px]"
+            >
+              <div class="py-2 rounded-xl bg-white dark:bg-charcoal-800 shadow-xl border border-charcoal/10 dark:border-charcoal-700 overflow-hidden">
+                <a 
+                  href="index.html" 
+                  class="home-sub-link flex items-center gap-2.5 px-4 py-2 text-xs sm:text-sm font-medium text-charcoal/80 dark:text-ivory/80 hover:bg-forest/10 hover:text-forest dark:hover:bg-charcoal-700 dark:hover:text-sage transition"
+                  data-page="index.html"
+                >
+                  <span class="w-1.5 h-1.5 rounded-full bg-transparent sub-dot"></span>
+                  <span>Home 1</span>
+                </a>
+                <a 
+                  href="home-2.html" 
+                  class="home-sub-link flex items-center gap-2.5 px-4 py-2 text-xs sm:text-sm font-medium text-charcoal/80 dark:text-ivory/80 hover:bg-forest/10 hover:text-forest dark:hover:bg-charcoal-700 dark:hover:text-sage transition"
+                  data-page="home-2.html"
+                >
+                  <span class="w-1.5 h-1.5 rounded-full bg-transparent sub-dot"></span>
+                  <span>Home 2</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a href="about.html" class="nav-link px-2.5 xl:px-3 py-2 text-xs xl:text-sm font-medium rounded-md transition-colors hover:text-forest dark:hover:text-sage">About</a>
+          <a href="services.html" class="nav-link px-2.5 xl:px-3 py-2 text-xs xl:text-sm font-medium rounded-md transition-colors hover:text-forest dark:hover:text-sage">Services</a>
+          <a href="projects.html" class="nav-link px-2.5 xl:px-3 py-2 text-xs xl:text-sm font-medium rounded-md transition-colors hover:text-forest dark:hover:text-sage">Projects</a>
+          <a href="pricing.html" class="nav-link px-2.5 xl:px-3 py-2 text-xs xl:text-sm font-medium rounded-md transition-colors hover:text-forest dark:hover:text-sage">Pricing</a>
+          <a href="contact.html" class="nav-link px-2.5 xl:px-3 py-2 text-xs xl:text-sm font-medium rounded-md transition-colors hover:text-forest dark:hover:text-sage">Contact</a>
+        </nav>
+
+        <!-- Right Utilities & Action CTAs -->
+        <div class="flex items-center gap-1.5 sm:gap-2">
+          <!-- RTL/LTR Toggle Button with Directional Icon -->
+          <button 
+            type="button" 
+            class="dir-toggle-btn w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-xl border border-charcoal/20 dark:border-charcoal-700 hover:bg-forest/10 dark:hover:bg-charcoal-800 text-charcoal dark:text-ivory transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-forest/40 dark:focus:ring-sage/40" 
+            title="Switch text direction (Current: LTR)" 
+            aria-label="Switch text direction"
+          >
+            <i data-lucide="arrow-left-right" class="w-4 h-4"></i>
+          </button>
+
+          <!-- Light/Dark Mode Toggle Button -->
+          <button 
+            type="button" 
+            class="theme-toggle-btn w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-xl border border-charcoal/20 dark:border-charcoal-700 hover:bg-forest/10 dark:hover:bg-charcoal-800 text-charcoal dark:text-ivory transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-forest/40 dark:focus:ring-sage/40" 
+            title="Toggle Light/Dark Theme" 
+            aria-label="Toggle Theme"
+          >
+            <i data-lucide="moon" class="theme-icon-dark w-4 h-4"></i>
+            <i data-lucide="sun" class="theme-icon-light w-4 h-4"></i>
+          </button>
+
+          <!-- Login Link with Visible Matching Border -->
+          <a 
+            href="login.html" 
+            class="hidden sm:inline-flex items-center gap-1.5 h-9 sm:h-10 px-3 rounded-xl border border-charcoal/20 dark:border-charcoal-700 hover:bg-forest/10 dark:hover:bg-charcoal-800 text-xs sm:text-sm font-semibold text-forest dark:text-ivory hover:text-terracotta dark:hover:text-sage transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-forest/40 dark:focus:ring-sage/40"
+          >
+            <i data-lucide="user" class="w-4 h-4"></i>
+            <span>Login</span>
+          </a>
+
+          <!-- Free Quote CTA Button (Visible on xl: and also on mobile drawer) -->
+          <a 
+            href="contact.html" 
+            class="hidden md:inline-flex lg:hidden xl:inline-flex items-center gap-2 h-9 sm:h-10 px-3.5 xl:px-4 rounded-xl bg-forest hover:bg-forest-600 text-white font-semibold text-xs sm:text-sm shadow-sm hover:shadow transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-forest/50"
+          >
+            <span>Get a Free Quote</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 icon-flip-rtl"></i>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button 
+            type="button" 
+            id="mobile-menu-btn" 
+            class="lg:hidden w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-xl text-charcoal dark:text-ivory hover:bg-forest/10 dark:hover:bg-charcoal-800 focus:outline-none" 
+            aria-label="Toggle navigation menu" 
+            aria-expanded="false"
+          >
+            <i data-lucide="menu" class="icon-menu w-6 h-6"></i>
+            <i data-lucide="x" class="icon-close w-6 h-6 hidden"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden border-b border-charcoal/10 dark:border-charcoal-700 bg-ivory dark:bg-charcoal-900 px-4 pt-2 pb-6 space-y-2">
+      <!-- Mobile Home Accordion -->
+      <div class="space-y-1">
+        <button 
+          type="button" 
+          id="mobile-home-btn" 
+          aria-expanded="false" 
+          class="w-full flex items-center justify-between px-3 py-2 rounded-md text-base font-medium text-charcoal/80 dark:text-ivory/80 hover:bg-forest/10 dark:hover:bg-charcoal-800 transition focus:outline-none"
+        >
+          <span>Home</span>
+          <svg id="mobile-home-chevron" class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="mobile-home-submenu" class="hidden pl-4 rtl:pl-0 rtl:pr-4 space-y-1 border-l-2 rtl:border-l-0 rtl:border-r-2 border-forest/30 dark:border-sage/40 ml-2 rtl:ml-0 rtl:mr-2">
+          <a href="index.html" class="nav-link block px-3 py-2 rounded-md text-sm font-medium hover:bg-forest/10 dark:hover:bg-charcoal-800 text-charcoal/80 dark:text-ivory/80">
+            Home 1
+          </a>
+          <a href="home-2.html" class="nav-link block px-3 py-2 rounded-md text-sm font-medium hover:bg-forest/10 dark:hover:bg-charcoal-800 text-charcoal/80 dark:text-ivory/80">
+            Home 2
+          </a>
+        </div>
+      </div>
+      <a href="about.html" class="nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-forest/10 dark:hover:bg-charcoal-800">About</a>
+      <a href="services.html" class="nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-forest/10 dark:hover:bg-charcoal-800">Services</a>
+      <a href="projects.html" class="nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-forest/10 dark:hover:bg-charcoal-800">Projects Gallery</a>
+      <a href="pricing.html" class="nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-forest/10 dark:hover:bg-charcoal-800">Pricing & Estimates</a>
+      <a href="contact.html" class="nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-forest/10 dark:hover:bg-charcoal-800">Contact Us</a>
+      <div class="pt-3 border-t border-charcoal/10 dark:border-charcoal-700 flex items-center justify-between">
+        <a href="login.html" class="inline-flex items-center gap-2 text-sm font-medium text-forest dark:text-sage">
+          <i data-lucide="user" class="w-4 h-4"></i>
+          <span>Account Login</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ========================================================================
+       SECTION 1: HERO (HOME 1 - PREMIUM VISUAL HOMEPAGE)
+       ======================================================================== -->
+  <section class="relative overflow-hidden py-16 lg:py-24 bg-gradient-to-b from-ivory to-white dark:from-charcoal-900 dark:to-charcoal-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Content Column -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-forest/10 dark:bg-forest-900/50 text-forest dark:text-sage text-xs font-semibold uppercase tracking-wider">
+            <span class="w-1.5 h-1.5 rounded-full bg-forest dark:bg-sage"></span>
+            Professional Painting &amp; Renovation
+          </div>
+          
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-forest dark:text-ivory leading-tight sm:leading-tight">
+            Give Your Home a Beautiful New Beginning.
+          </h1>
+
+          <p class="text-base sm:text-lg text-charcoal/80 dark:text-ivory/80 max-w-xl font-normal leading-relaxed">
+            From professional interior painting to complete home improvements, we bring quality craftsmanship and thoughtful design to every space.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="contact.html" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-base font-semibold text-white bg-forest hover:bg-forest-600 rounded-xl shadow-md hover:shadow-lg transition transform hover:-translate-y-0.5">
+              <span>Get a Free Quote</span>
+              <i data-lucide="calendar" class="w-4 h-4"></i>
+            </a>
+
+            <a href="projects.html" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-base font-semibold text-charcoal dark:text-ivory bg-lightgrey/60 dark:bg-charcoal-700 hover:bg-lightgrey dark:hover:bg-charcoal-600 rounded-xl transition">
+              <span>Explore Our Projects</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 icon-flip-rtl"></i>
+            </a>
+          </div>
+
+          <!-- Trust Indicators -->
+          <div class="pt-6 border-t border-charcoal/10 dark:border-charcoal-700/60 grid grid-cols-3 gap-4">
+            <div class="flex items-center gap-2.5">
+              <div class="p-2 rounded-lg bg-forest/10 dark:bg-forest-900/40 text-forest dark:text-sage shrink-0">
+                <i data-lucide="shield-check" class="w-4 h-4"></i>
+              </div>
+              <span class="text-xs sm:text-sm font-medium leading-snug">Precision Surface Prep</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <div class="p-2 rounded-lg bg-forest/10 dark:bg-forest-900/40 text-forest dark:text-sage shrink-0">
+                <i data-lucide="sparkles" class="w-4 h-4"></i>
+              </div>
+              <span class="text-xs sm:text-sm font-medium leading-snug">Dust-Free Process</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <div class="p-2 rounded-lg bg-forest/10 dark:bg-forest-900/40 text-forest dark:text-sage shrink-0">
+                <i data-lucide="award" class="w-4 h-4"></i>
+              </div>
+              <span class="text-xs sm:text-sm font-medium leading-snug">Low-VOC Paints</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual Column (Interactive Before & After Transformation) -->
+        <div class="lg:col-span-5 relative">
+          <!-- Draggable Before/After Container -->
+          <div class="ba-container relative h-[380px] sm:h-[440px] lg:h-[420px] w-full mx-auto overflow-hidden rounded-2xl shadow-xl border border-charcoal/15 dark:border-charcoal-700 bg-charcoal/10 select-none">
+            
+            <!-- Base Image: After (Revealed on Right) -->
+            <img 
+              src="assets/images/before-after/after-room.jpg" 
+              alt="Living room after EVERCOAT painting and renovation" 
+              class="ba-base-image object-cover w-full h-full"
+              loading="eager"
+            >
+            <span class="absolute top-3.5 right-3.5 z-10 px-2.5 py-1 rounded-md bg-forest/85 backdrop-blur-sm text-white font-semibold text-xs tracking-wider uppercase shadow-sm">
+              After
+            </span>
+
+            <!-- Clipped Image: Before (On Left) -->
+            <div class="ba-clip-wrapper absolute inset-y-0 left-0 w-1/2 overflow-hidden z-10">
+              <img 
+                src="assets/images/before-after/before-room.jpg" 
+                alt="Living room before painting and renovation" 
+                class="ba-clip-image absolute top-0 left-0 h-full object-cover max-w-none"
+                loading="eager"
+              >
+              <span class="absolute top-3.5 left-3.5 z-10 px-2.5 py-1 rounded-md bg-black/70 backdrop-blur-sm text-white font-semibold text-xs tracking-wider uppercase shadow-sm">
+                Before
+              </span>
+            </div>
+
+            <!-- Draggable Comparison Handle -->
+            <div 
+              class="ba-handle" 
+              role="slider" 
+              tabindex="0" 
+              aria-label="Image comparison slider" 
+              aria-valuemin="0" 
+              aria-valuemax="100" 
+              aria-valuenow="50"
+            >
+              <div class="ba-handle-button">
+                <i data-lucide="chevrons-left-right" class="w-5 h-5 text-forest"></i>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Component Caption, Supporting Description & CTA -->
+          <div class="mt-4 p-4 rounded-xl bg-white/90 dark:bg-charcoal-800/90 backdrop-blur-sm border border-charcoal/10 dark:border-charcoal-700 shadow-sm text-charcoal dark:text-ivory">
+            <h3 class="font-serif text-base sm:text-lg font-bold text-forest dark:text-ivory leading-snug">
+              Every transformation tells a story.
+            </h3>
+            <p class="text-xs sm:text-sm text-charcoal/70 dark:text-ivory/70 mt-1 leading-relaxed">
+              From tired walls to beautifully renewed spaces, discover the difference thoughtful painting and renovation can make.
+            </p>
+            <p class="text-[11px] text-charcoal/50 dark:text-ivory/50 mt-1 italic">
+              Illustrative renovation transformation
+            </p>
+            <div class="pt-3 mt-3 border-t border-charcoal/10 dark:border-charcoal-700/60 flex items-center justify-between">
+              <a href="projects.html" class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-terracotta hover:text-terracotta-hover transition group">
+                <span>View Our Projects</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 icon-flip-rtl group-hover:translate-x-0.5 transition-transform"></i>
+              </a>
+              <span class="text-[11px] text-charcoal/50 dark:text-ivory/50 flex items-center gap-1">
+                <i data-lucide="move-horizontal" class="w-3.5 h-3.5"></i>
+                <span>Drag to compare</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       SECTION 2: INTRODUCTION
+       ======================================================================== -->
+  <section class="py-20 bg-white dark:bg-charcoal-800 transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Side Image -->
+        <div class="lg:col-span-6 relative">
+          <div class="rounded-2xl overflow-hidden shadow-xl border border-charcoal/10 dark:border-charcoal-700">
+            <img 
+              src="assets/images/about/about-renovation.jpg" 
+              alt="Real interior renovation work by EVERCOAT contractors" 
+              class="w-full h-[440px] object-cover"
+              loading="lazy"
+            >
+          </div>
+          <!-- Architectural Detail Caption -->
+          <div class="absolute -bottom-6 -right-6 hidden sm:block bg-forest text-white p-5 rounded-2xl shadow-xl max-w-xs border border-white/10">
+            <p class="font-serif text-xl font-bold">Meticulous Detail</p>
+            <p class="text-xs opacity-90 mt-1">Every surface hand-sanded with dustless HEPA extraction before primer application.</p>
+          </div>
+        </div>
+
+        <!-- Right Side Introduction Content -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-block px-3 py-1 rounded-md bg-sage/20 text-forest dark:text-sage text-xs font-bold uppercase tracking-wider">
+            About EVERCOAT
+          </div>
+          
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest dark:text-ivory leading-snug">
+            Thoughtful Surface Preparation &amp; Enduring Residential Finishes.
+          </h2>
+
+          <p class="text-charcoal/80 dark:text-ivory/80 leading-relaxed text-base">
+            At EVERCOAT, we believe a home's walls are its soul. Founded on the values of meticulous surface preparation, precision edge work, and transparent client communication, we elevate residential properties through customized painting and architectural refurbishment.
+          </p>
+
+          <p class="text-charcoal/80 dark:text-ivory/80 leading-relaxed text-base">
+            Whether you need a fresh coat of low-VOC paint for your family living room, weather-resilient exterior coatings for your villa, or custom Venetian plaster feature walls, our experienced team ensures a smooth, timely, and spotless execution.
+          </p>
+
+          <div class="space-y-3 pt-2">
+            <div class="flex items-center gap-3">
+              <i data-lucide="check" class="w-5 h-5 text-terracotta shrink-0"></i>
+              <span class="text-sm font-medium">Comprehensive mask-and-protect protocol for furniture and floors</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <i data-lucide="check" class="w-5 h-5 text-terracotta shrink-0"></i>
+              <span class="text-sm font-medium">Laser moisture inspection before paint application</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <i data-lucide="check" class="w-5 h-5 text-terracotta shrink-0"></i>
+              <span class="text-sm font-medium">Detailed written estimate with zero hidden surcharges</span>
+            </div>
+          </div>
+
+          <div class="pt-4">
+            <a href="services.html" class="inline-flex items-center gap-2 text-forest dark:text-sage font-semibold hover:text-terracotta transition">
+              <span>Learn More About Our Services</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 icon-flip-rtl"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       SECTION 3: SERVICES (4 CARDS)
+       ======================================================================== -->
+  <section class="py-20 bg-ivory dark:bg-charcoal-900 transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+        <span class="text-xs font-bold uppercase tracking-widest text-terracotta">What We Deliver</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest dark:text-ivory">Comprehensive Home Services</h2>
+        <p class="text-charcoal/70 dark:text-ivory/70 text-sm sm:text-base">
+          Tailored painting and renovation solutions designed to enhance aesthetics, comfort, and long-term durability.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Card 1: Interior Painting -->
+        <div class="group bg-white dark:bg-charcoal-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col border border-charcoal/10 dark:border-charcoal-700">
+          <div class="relative h-52 overflow-hidden">
+            <img 
+              src="assets/images/services/interior-painting.jpg" 
+              alt="Professional Interior Painting" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            >
+            <div class="absolute top-4 left-4 p-2 bg-white/90 dark:bg-charcoal-900/90 rounded-lg text-forest dark:text-sage shadow">
+              <i data-lucide="paintbrush" class="w-5 h-5"></i>
+            </div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="font-serif text-xl font-bold text-forest dark:text-ivory mb-2">Interior Painting</h3>
+            <p class="text-charcoal/70 dark:text-ivory/70 text-sm leading-relaxed flex-grow mb-4">
+              Pristine finishes for living spaces, bedrooms, ceilings, and trim using premium washable, anti-fungal emulsions.
+            </p>
+            <a href="services.html" class="inline-flex items-center gap-1.5 text-sm font-semibold text-terracotta hover:text-terracotta-hover transition mt-auto">
+              <span>Learn More</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 icon-flip-rtl"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2: Exterior Painting -->
+        <div class="group bg-white dark:bg-charcoal-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col border border-charcoal/10 dark:border-charcoal-700">
+          <div class="relative h-52 overflow-hidden">
+            <img 
+              src="assets/images/services/exterior-painting.jpg" 
+              alt="Exterior Painting and Facade Protection" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            >
+            <div class="absolute top-4 left-4 p-2 bg-white/90 dark:bg-charcoal-900/90 rounded-lg text-forest dark:text-sage shadow">
+              <i data-lucide="home" class="w-5 h-5"></i>
+            </div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="font-serif text-xl font-bold text-forest dark:text-ivory mb-2">Exterior Painting</h3>
+            <p class="text-charcoal/70 dark:text-ivory/70 text-sm leading-relaxed flex-grow mb-4">
+              Weather-shield barriers, elastomeric waterproofing, and high-durability exterior paints for enduring curb appeal.
+            </p>
+            <a href="services.html" class="inline-flex items-center gap-1.5 text-sm font-semibold text-terracotta hover:text-terracotta-hover transition mt-auto">
+              <span>Learn More</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 icon-flip-rtl"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3: Texture Finishes -->
+        <div class="group bg-white dark:bg-charcoal-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col border border-charcoal/10 dark:border-charcoal-700">
+          <div class="relative h-52 overflow-hidden">
+            <img 
+              src="assets/images/services/texture-finish.jpg" 
+              alt="Artisan Texture Finishes and Feature Walls" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            >
+            <div class="absolute top-4 left-4 p-2 bg-white/90 dark:bg-charcoal-900/90 rounded-lg text-forest dark:text-sage shadow">
+              <i data-lucide="palette" class="w-5 h-5"></i>
+            </div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="font-serif text-xl font-bold text-forest dark:text-ivory mb-2">Texture Finishes</h3>
+            <p class="text-charcoal/70 dark:text-ivory/70 text-sm leading-relaxed flex-grow mb-4">
+              Handcrafted Italian stucco, Venetian plaster, metallic glazes, and tactile feature walls that add architectural depth.
+            </p>
+            <a href="services.html" class="inline-flex items-center gap-1.5 text-sm font-semibold text-terracotta hover:text-terracotta-hover transition mt-auto">
+              <span>Learn More</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 icon-flip-rtl"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 4: Minor Renovations -->
+        <div class="group bg-white dark:bg-charcoal-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col border border-charcoal/10 dark:border-charcoal-700">
+          <div class="relative h-52 overflow-hidden">
+            <img 
+              src="assets/images/services/minor-renovation.jpg" 
+              alt="Minor Renovations, Surface Restoration, and Carpentry" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            >
+            <div class="absolute top-4 left-4 p-2 bg-white/90 dark:bg-charcoal-900/90 rounded-lg text-forest dark:text-sage shadow">
+              <i data-lucide="wrench" class="w-5 h-5"></i>
+            </div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="font-serif text-xl font-bold text-forest dark:text-ivory mb-2">Minor Renovations</h3>
+            <p class="text-charcoal/70 dark:text-ivory/70 text-sm leading-relaxed flex-grow mb-4">
+              Drywall repair, skimming, moulding, woodwork refinishing, and targeted refurbishment to revitalize your space.
+            </p>
+            <a href="services.html" class="inline-flex items-center gap-1.5 text-sm font-semibold text-terracotta hover:text-terracotta-hover transition mt-auto">
+              <span>Learn More</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 icon-flip-rtl"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       SECTION 4: THE FOUR-STAGE TRANSFORMATION PROTOCOL
+       ======================================================================== -->
+  <section class="py-20 bg-white dark:bg-charcoal-800 transition-colors border-b border-charcoal/10 dark:border-charcoal-700/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+        <span class="text-xs font-bold uppercase tracking-widest text-terracotta">Restoration Methodology</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest dark:text-ivory">The Anatomy of a Flawless Finish</h2>
+        <p class="text-charcoal/70 dark:text-ivory/70 text-sm sm:text-base">
+          Long-lasting paint finishes are engineered from the wall outwards. Here is our systematic four-stage protocol applied on every residential project.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Stage 01 -->
+        <div class="relative p-7 rounded-2xl bg-ivory dark:bg-charcoal-900 border border-charcoal/10 dark:border-charcoal-700/80 flex flex-col justify-between">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-forest text-white font-serif text-lg font-bold flex items-center justify-center mb-5 shadow-sm">
+              01
+            </div>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-terracotta">Inspection</span>
+            <h3 class="font-serif text-xl font-bold text-forest dark:text-ivory mt-1 mb-2">Substrate Moisture Testing</h3>
+            <p class="text-xs sm:text-sm text-charcoal/70 dark:text-ivory/70 leading-relaxed">
+              We test deep substrate equilibrium with pinless RF moisture meters. Primer is never applied until walls read under 12% moisture.
+            </p>
+          </div>
+          <div class="pt-4 mt-6 border-t border-charcoal/10 dark:border-charcoal-700/60 text-[11px] text-forest dark:text-sage font-medium flex items-center gap-1.5">
+            <i data-lucide="check" class="w-3.5 h-3.5 text-terracotta"></i>
+            <span>Prevents blistering &amp; efflorescence</span>
+          </div>
+        </div>
+
+        <!-- Stage 02 -->
+        <div class="relative p-7 rounded-2xl bg-ivory dark:bg-charcoal-900 border border-charcoal/10 dark:border-charcoal-700/80 flex flex-col justify-between">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-forest text-white font-serif text-lg font-bold flex items-center justify-center mb-5 shadow-sm">
+              02
+            </div>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-terracotta">Preparation</span>
+            <h3 class="font-serif text-xl font-bold text-forest dark:text-ivory mt-1 mb-2">99% Dustless HEPA Sanding</h3>
+            <p class="text-xs sm:text-sm text-charcoal/70 dark:text-ivory/70 leading-relaxed">
+              Planetary vacuum sanders with 0.3-micron filtration eliminate airborne drywall dust, preserving clean air and immaculate furnishings.
+            </p>
+          </div>
+          <div class="pt-4 mt-6 border-t border-charcoal/10 dark:border-charcoal-700/60 text-[11px] text-forest dark:text-sage font-medium flex items-center gap-1.5">
+            <i data-lucide="check" class="w-3.5 h-3.5 text-terracotta"></i>
+            <span>Clean air &amp; spotless floors</span>
+          </div>
+        </div>
+
+        <!-- Stage 03 -->
+        <div class="relative p-7 rounded-2xl bg-ivory dark:bg-charcoal-900 border border-charcoal/10 dark:border-charcoal-700/80 flex flex-col justify-between">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-forest text-white font-serif text-lg font-bold flex items-center justify-center mb-5 shadow-sm">
+              03
+            </div>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-terracotta">Priming</span>
+            <h3 class="font-serif text-xl font-bold text-forest dark:text-ivory mt-1 mb-2">Anchor Primer Sealer</h3>
+            <p class="text-xs sm:text-sm text-charcoal/70 dark:text-ivory/70 leading-relaxed">
+              Full-penetration stain-blocking primer creates a chemical bridge between cured plaster and topcoat, ensuring 100% adhesion.
+            </p>
+          </div>
+          <div class="pt-4 mt-6 border-t border-charcoal/10 dark:border-charcoal-700/60 text-[11px] text-forest dark:text-sage font-medium flex items-center gap-1.5">
+            <i data-lucide="check" class="w-3.5 h-3.5 text-terracotta"></i>
+            <span>Zero peel or patch telegraphing</span>
+          </div>
+        </div>
+
+        <!-- Stage 04 -->
+        <div class="relative p-7 rounded-2xl bg-ivory dark:bg-charcoal-900 border border-charcoal/10 dark:border-charcoal-700/80 flex flex-col justify-between">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-forest text-white font-serif text-lg font-bold flex items-center justify-center mb-5 shadow-sm">
+              04
+            </div>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-terracotta">Finishing</span>
+            <h3 class="font-serif text-xl font-bold text-forest dark:text-ivory mt-1 mb-2">Dual Architectural Coats</h3>
+            <p class="text-xs sm:text-sm text-charcoal/70 dark:text-ivory/70 leading-relaxed">
+              Two cross-rolled coats of premium low-VOC emulsion applied with laser-straight cut-ins along all moldings and ceiling transitions.
+            </p>
+          </div>
+          <div class="pt-4 mt-6 border-t border-charcoal/10 dark:border-charcoal-700/60 text-[11px] text-forest dark:text-sage font-medium flex items-center gap-1.5">
+            <i data-lucide="check" class="w-3.5 h-3.5 text-terracotta"></i>
+            <span>Uniform sheen &amp; full washability</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       SECTION 5: OUR CRAFTSMANSHIP COMMITMENTS
+       ======================================================================== -->
+  <section class="py-20 bg-ivory dark:bg-charcoal-900 transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left: Image and Editorial Philosophy -->
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-xs font-bold uppercase tracking-widest text-terracotta">The EVERCOAT Standard</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest dark:text-ivory leading-tight">
+            Craftsmanship Rooted in Architectural Rigor.
+          </h2>
+          <p class="text-charcoal/80 dark:text-ivory/80 text-sm sm:text-base leading-relaxed">
+            We treat residential properties with the precision of an architectural workshop. Rather than rushing straight to topcoats, our tradespeople dedicate the majority of project hours to stabilization, acoustic leveling, and seamless masking.
+          </p>
+          <div class="rounded-2xl overflow-hidden border border-charcoal/10 dark:border-charcoal-700 shadow-md">
+            <img 
+              src="assets/images/about/painters-work.jpg" 
+              alt="EVERCOAT tradesperson executing laser-straight cut-in along ceiling moulding" 
+              class="w-full h-64 object-cover"
+              loading="lazy"
+            >
+          </div>
+          <p class="text-xs text-charcoal/50 dark:text-ivory/50 italic">
+            Directly employed tradespeople operating with calibrated equipment.
+          </p>
+        </div>
+
+        <!-- Right: Four Core Technical Pillars -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            
+            <!-- Pillar 1 -->
+            <div class="p-6 rounded-2xl bg-white dark:bg-charcoal-800 border border-charcoal/10 dark:border-charcoal-700/60 shadow-sm space-y-2">
+              <div class="w-10 h-10 rounded-xl bg-forest/10 dark:bg-forest-900/50 text-forest dark:text-sage flex items-center justify-center mb-3">
+                <i data-lucide="shield-check" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-serif text-lg font-bold text-forest dark:text-ivory">Dust-Free Living</h3>
+              <p class="text-xs sm:text-sm text-charcoal/70 dark:text-ivory/70 leading-relaxed">
+                Integrated HEPA extraction sanders collect drywall dust directly at source, preserving indoor air purity and homeowner comfort.
+              </p>
+            </div>
+
+            <!-- Pillar 2 -->
+            <div class="p-6 rounded-2xl bg-white dark:bg-charcoal-800 border border-charcoal/10 dark:border-charcoal-700/60 shadow-sm space-y-2">
+              <div class="w-10 h-10 rounded-xl bg-forest/10 dark:bg-forest-900/50 text-forest dark:text-sage flex items-center justify-center mb-3">
+                <i data-lucide="droplet" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-serif text-lg font-bold text-forest dark:text-ivory">Authentic Materials</h3>
+              <p class="text-xs sm:text-sm text-charcoal/70 dark:text-ivory/70 leading-relaxed">
+                Factory-sealed containers of zero-VOC washable acrylics, lime plasters, and mineral finishes with verified batch numbers.
+              </p>
+            </div>
+
+            <!-- Pillar 3 -->
+            <div class="p-6 rounded-2xl bg-white dark:bg-charcoal-800 border border-charcoal/10 dark:border-charcoal-700/60 shadow-sm space-y-2">
+              <div class="w-10 h-10 rounded-xl bg-forest/10 dark:bg-forest-900/50 text-forest dark:text-sage flex items-center justify-center mb-3">
+                <i data-lucide="file-spreadsheet" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-serif text-lg font-bold text-forest dark:text-ivory">Transparent Estimates</h3>
+              <p class="text-xs sm:text-sm text-charcoal/70 dark:text-ivory/70 leading-relaxed">
+                Clear square-foot calculations broken down by room and surface, guaranteeing zero unexpected surcharges at billing.
+              </p>
+            </div>
+
+            <!-- Pillar 4 -->
+            <div class="p-6 rounded-2xl bg-white dark:bg-charcoal-800 border border-charcoal/10 dark:border-charcoal-700/60 shadow-sm space-y-2">
+              <div class="w-10 h-10 rounded-xl bg-forest/10 dark:bg-forest-900/50 text-forest dark:text-sage flex items-center justify-center mb-3">
+                <i data-lucide="calendar-check" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-serif text-lg font-bold text-forest dark:text-ivory">Milestone Discipline</h3>
+              <p class="text-xs sm:text-sm text-charcoal/70 dark:text-ivory/70 leading-relaxed">
+                Structured start and handover dates managed by dedicated project supervisors with daily progress check-ins.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="p-5 rounded-2xl bg-white/70 dark:bg-charcoal-800/70 border border-charcoal/10 dark:border-charcoal-700 flex items-center justify-between gap-4">
+            <p class="text-xs sm:text-sm text-charcoal/80 dark:text-ivory/80 font-medium">
+              Want to see our finish standards in person? Request a sample swatch board.
+            </p>
+            <a href="contact.html" class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-terracotta hover:text-terracotta-hover shrink-0">
+              <span>Book Consultation</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 icon-flip-rtl"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       SECTION 6: FEATURED PROJECTS
+       ======================================================================== -->
+  <section class="py-20 bg-white dark:bg-charcoal-800 transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-terracotta">Selected Portfolio</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest dark:text-ivory mt-1">Featured Transformations</h2>
+        </div>
+        <a href="projects.html" class="inline-flex items-center gap-2 text-forest dark:text-sage font-semibold hover:text-terracotta transition">
+          <span>View All Projects</span>
+          <i data-lucide="arrow-right" class="w-4 h-4 icon-flip-rtl"></i>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Project 1 -->
+        <div class="group rounded-2xl overflow-hidden bg-ivory dark:bg-charcoal-900 border border-charcoal/10 dark:border-charcoal-700 shadow-sm hover:shadow-xl transition-all duration-300">
+          <div class="relative h-64 overflow-hidden">
+            <img 
+              src="assets/images/projects/project-1-living.jpg" 
+              alt="Luxury Living Room Transformation" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            >
+            <span class="absolute top-4 left-4 px-3 py-1 rounded bg-forest/90 text-white text-xs font-medium">
+              Interior Painting
+            </span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-xl font-bold text-forest dark:text-ivory mb-2">Grand Living Room Makeover</h3>
+            <p class="text-charcoal/70 dark:text-ivory/70 text-sm">
+              Custom warm ivory wall coats paired with bespoke ceiling architectural trim.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="group rounded-2xl overflow-hidden bg-ivory dark:bg-charcoal-900 border border-charcoal/10 dark:border-charcoal-700 shadow-sm hover:shadow-xl transition-all duration-300">
+          <div class="relative h-64 overflow-hidden">
+            <img 
+              src="assets/images/projects/project-2-exterior.jpg" 
+              alt="Coastal Villa Weatherproofing & Painting" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            >
+            <span class="absolute top-4 left-4 px-3 py-1 rounded bg-forest/90 text-white text-xs font-medium">
+              Exterior Painting
+            </span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-xl font-bold text-forest dark:text-ivory mb-2">Modern Villa Exterior Facade</h3>
+            <p class="text-charcoal/70 dark:text-ivory/70 text-sm">
+              Complete crack repair, primer seal, and high-performance silicone weather shields.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="group rounded-2xl overflow-hidden bg-ivory dark:bg-charcoal-900 border border-charcoal/10 dark:border-charcoal-700 shadow-sm hover:shadow-xl transition-all duration-300">
+          <div class="relative h-64 overflow-hidden">
+            <img 
+              src="assets/images/projects/project-3-texture.jpg" 
+              alt="Artisan Textured Plaster Feature Wall" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            >
+            <span class="absolute top-4 left-4 px-3 py-1 rounded bg-forest/90 text-white text-xs font-medium">
+              Texture Finishes
+            </span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-xl font-bold text-forest dark:text-ivory mb-2">Artisan Venetian Plaster Accent</h3>
+            <p class="text-charcoal/70 dark:text-ivory/70 text-sm">
+              Hand-trowelled textured plaster wall adding organic warmth and natural light play.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       SECTION 7: EXECUTION BENCHMARKS & FINISH STANDARDS
+       ======================================================================== -->
+  <section class="py-16 bg-forest text-white transition-colors relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center mb-10">
+        <span class="text-xs uppercase tracking-widest text-sage font-semibold">Technical Benchmarks</span>
+        <h3 class="font-serif text-2xl sm:text-3xl font-bold mt-1">Contractor Precision Standards</h3>
+        <p class="text-xs text-white/60 mt-1 italic">Verified quality control thresholds applied to every residential workspace</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div class="p-4">
+          <p class="font-serif text-4xl sm:text-5xl font-bold text-sage stat-counter" data-target="12" data-suffix="%">0</p>
+          <p class="text-sm sm:text-base font-medium mt-2 text-white/90">Max Substrate Moisture</p>
+        </div>
+
+        <div class="p-4">
+          <p class="font-serif text-4xl sm:text-5xl font-bold text-sage stat-counter" data-target="99" data-suffix="%">0</p>
+          <p class="text-sm sm:text-base font-medium mt-2 text-white/90">HEPA Sanding Extraction</p>
+        </div>
+
+        <div class="p-4">
+          <p class="font-serif text-4xl sm:text-5xl font-bold text-sage stat-counter" data-target="5" data-suffix=" g/L">0</p>
+          <p class="text-sm sm:text-base font-medium mt-2 text-white/90">Low-VOC Formulation</p>
+        </div>
+
+        <div class="p-4">
+          <p class="font-serif text-4xl sm:text-5xl font-bold text-sage stat-counter" data-target="100" data-suffix="%">0</p>
+          <p class="text-sm sm:text-base font-medium mt-2 text-white/90">Itemized Scope Adherence</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       SECTION 8: TESTIMONIALS (SINGLE-CARD INTERACTIVE CAROUSEL)
+       ======================================================================== -->
+  <section class="py-20 bg-ivory dark:bg-charcoal-900 transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14 space-y-3">
+        <span class="text-xs font-bold uppercase tracking-widest text-terracotta">Client Experiences</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest dark:text-ivory">What Homeowners Say</h2>
+        <p class="text-charcoal/70 dark:text-ivory/70 text-sm sm:text-base">
+          Real experiences. Thoughtful transformations. Happier homes.
+        </p>
+      </div>
+
+      <!-- Testimonial Carousel -->
+      <div id="testimonial-carousel" class="max-w-4xl mx-auto relative px-0 sm:px-14">
+        
+        <!-- Flanking Prev/Next Buttons for Desktop & Tablet -->
+        <button 
+          id="carousel-prev" 
+          type="button" 
+          class="absolute left-0 top-1/2 -translate-y-1/2 hidden sm:flex w-12 h-12 rounded-full bg-white dark:bg-charcoal-800 border border-charcoal/15 dark:border-charcoal-700 shadow-md hover:bg-forest hover:text-white dark:hover:bg-forest dark:hover:text-white text-forest dark:text-ivory items-center justify-center transition-all duration-200 z-20 focus:outline-none focus:ring-2 focus:ring-forest cursor-pointer"
+          aria-label="Previous testimonial"
+        >
+          <i data-lucide="chevron-left" class="w-5 h-5 icon-flip-rtl"></i>
+        </button>
+
+        <button 
+          id="carousel-next" 
+          type="button" 
+          class="absolute right-0 top-1/2 -translate-y-1/2 hidden sm:flex w-12 h-12 rounded-full bg-white dark:bg-charcoal-800 border border-charcoal/15 dark:border-charcoal-700 shadow-md hover:bg-forest hover:text-white dark:hover:bg-forest dark:hover:text-white text-forest dark:text-ivory items-center justify-center transition-all duration-200 z-20 focus:outline-none focus:ring-2 focus:ring-forest cursor-pointer"
+          aria-label="Next testimonial"
+        >
+          <i data-lucide="chevron-right" class="w-5 h-5 icon-flip-rtl"></i>
+        </button>
+
+        <!-- Main Testimonial Card -->
+        <div 
+          id="carousel-card" 
+          class="bg-white dark:bg-charcoal-800 rounded-3xl p-6 sm:p-12 lg:p-14 shadow-lg border border-charcoal/10 dark:border-charcoal-700/60 text-center transition-all duration-300 min-h-[350px] sm:min-h-[320px] flex flex-col justify-between"
+        >
+          <!-- 1. Five Gold Stars -->
+          <div class="flex items-center justify-center gap-1.5 text-amber-400 mb-6" aria-label="5 out of 5 stars rating">
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+          </div>
+
+          <!-- 2. Large Quotation -->
+          <blockquote class="my-auto px-2 sm:px-6">
+            <p id="carousel-quote" class="font-serif text-lg sm:text-2xl lg:text-3xl font-medium text-charcoal/90 dark:text-ivory/95 italic leading-relaxed sm:leading-relaxed max-w-2xl mx-auto">
+              "The EVERCOAT team repainted our entire home in just four days. Their dustless sanding system made all the difference, and the trim edges along our ceiling look laser-straight."
+            </p>
+          </blockquote>
+
+          <!-- 3. Thin Horizontal Divider -->
+          <div class="w-16 sm:w-20 h-px bg-charcoal/15 dark:bg-charcoal-600 mx-auto my-6"></div>
+
+          <!-- 4. Customer Name & Project Description -->
+          <div>
+            <p id="carousel-name" class="font-serif text-base sm:text-xl font-bold text-forest dark:text-ivory">
+              David & Sarah M.
+            </p>
+            <p class="text-xs sm:text-sm text-charcoal/65 dark:text-ivory/65 mt-1 font-medium">
+              <span id="carousel-project">Interior Renovation & Repainting</span>
+              <span class="mx-1.5 opacity-50">&bull;</span>
+              <span id="carousel-location" class="text-forest dark:text-sage font-semibold">Austin, Texas</span>
+            </p>
+            <p class="text-[11px] text-charcoal/45 dark:text-ivory/45 mt-2 italic">
+              Sample homeowner feedback for illustrative review
+            </p>
+          </div>
+        </div>
+
+        <!-- Mobile Controls (Below card) & Desktop Dots -->
+        <div class="flex items-center justify-center gap-4 mt-6 sm:mt-8">
+          <button 
+            type="button" 
+            class="sm:hidden w-10 h-10 rounded-full bg-white dark:bg-charcoal-800 border border-charcoal/15 dark:border-charcoal-700 shadow-sm flex items-center justify-center text-forest dark:text-ivory active:scale-95 transition"
+            onclick="document.getElementById('carousel-prev').click()"
+            aria-label="Previous testimonial"
+          >
+            <i data-lucide="chevron-left" class="w-5 h-5 icon-flip-rtl"></i>
+          </button>
+
+          <div id="carousel-dots" class="flex items-center justify-center gap-2.5"></div>
+
+          <button 
+            type="button" 
+            class="sm:hidden w-10 h-10 rounded-full bg-white dark:bg-charcoal-800 border border-charcoal/15 dark:border-charcoal-700 shadow-sm flex items-center justify-center text-forest dark:text-ivory active:scale-95 transition"
+            onclick="document.getElementById('carousel-next').click()"
+            aria-label="Next testimonial"
+          >
+            <i data-lucide="chevron-right" class="w-5 h-5 icon-flip-rtl"></i>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       SECTION 9: FINAL CTA
+       ======================================================================== -->
+  <section class="py-20 bg-forest text-white transition-colors relative overflow-hidden">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
+      <span class="text-xs font-bold uppercase tracking-widest text-sage">Begin Your Project</span>
+      <h2 class="font-serif text-3xl sm:text-5xl font-bold leading-tight">
+        Ready to Transform Your Home?
+      </h2>
+      <p class="text-base sm:text-lg text-white/80 max-w-2xl mx-auto leading-relaxed">
+        Let's discuss your next painting or renovation project. Our team provides free on-site inspections, laser measurements, and clear itemized estimates.
+      </p>
+      <div class="pt-4 flex flex-wrap justify-center gap-4">
+        <a href="contact.html" class="inline-flex items-center gap-2 px-8 py-4 text-base font-semibold text-forest bg-white hover:bg-ivory rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5">
+          <span>Request Your Free Quote</span>
+          <i data-lucide="arrow-right" class="w-4 h-4 icon-flip-rtl"></i>
+        </a>
+        <a href="pricing.html" class="inline-flex items-center gap-2 px-8 py-4 text-base font-semibold text-white bg-forest-700 hover:bg-forest-800 rounded-xl transition border border-white/20">
+          <span>Explore Pricing Rates</span>
+          <i data-lucide="calculator" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       SECTION 10: GLOBAL FOOTER
+       ======================================================================== -->
+  <footer class="bg-charcoal text-ivory/90 transition-colors border-t border-charcoal-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
+        
+        <!-- Col 1: Brand -->
+        <div class="lg:col-span-4 space-y-4">
+          <a href="index.html" class="flex items-center gap-3 group focus:outline-none" aria-label="EVERCOAT Home">
+            <div class="w-10 h-10 rounded-lg bg-forest flex items-center justify-center text-ivory shadow-sm group-hover:bg-terracotta transition-colors duration-300">
+              <i data-lucide="paintbrush" class="w-5 h-5 text-white"></i>
+            </div>
+            <div>
+              <span class="font-serif text-2xl font-bold tracking-wider text-white block leading-none">EVERCOAT</span>
+              <span class="text-[10px] tracking-widest uppercase font-medium text-sage block mt-1">Contractor Studio</span>
+            </div>
+          </a>
+          <p class="text-sm text-ivory/70 max-w-sm leading-relaxed">
+            Professional Painting & Home Renovation Contractor. Thoughtful craftsmanship, dustless surface preparation, and enduring finishes.
+          </p>
+          <p class="text-xs text-sage font-medium italic">
+            "Every Wall. A New Beginning."
+          </p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="lg:col-span-2 space-y-3">
+          <h4 class="font-serif text-base font-semibold text-white">Quick Links</h4>
+          <ul class="space-y-2 text-sm text-ivory/75">
+            <li><a href="index.html" class="hover:text-terracotta transition">Home 1</a></li>
+            <li><a href="home-2.html" class="hover:text-terracotta transition">Home 2</a></li>
+            <li><a href="about.html" class="hover:text-terracotta transition">About</a></li>
+            <li><a href="services.html" class="hover:text-terracotta transition">Services</a></li>
+            <li><a href="projects.html" class="hover:text-terracotta transition">Projects Gallery</a></li>
+            <li><a href="pricing.html" class="hover:text-terracotta transition">Pricing & Estimates</a></li>
+            <li><a href="contact.html" class="hover:text-terracotta transition">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Contact Info -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="font-serif text-base font-semibold text-white">Contact & Studio</h4>
+          <ul class="space-y-2.5 text-sm text-ivory/75">
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="phone" class="w-4 h-4 text-sage shrink-0"></i>
+              <span>+1 (512) 555-0198</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="mail" class="w-4 h-4 text-sage shrink-0"></i>
+              <span>hello@evercoat.example</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="map-pin" class="w-4 h-4 text-sage shrink-0"></i>
+              <span>Austin, Texas, USA</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="clock" class="w-4 h-4 text-sage shrink-0"></i>
+              <span>Mon – Sat: 9:00 AM – 6:00 PM</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Follow Us / Connect With Us -->
+        <div id="footer-connect" class="lg:col-span-3 space-y-4">
+          <h4 class="font-serif text-base font-semibold text-white">Connect With Us</h4>
+          <p class="text-xs text-ivory/70 leading-relaxed">
+            Follow our latest renovations, colour inspiration, and before-and-after transformations.
+          </p>
+          <div class="flex items-center gap-3">
+            <!-- Instagram -->
+            <a href="#" class="social-link w-10 h-10 rounded-xl bg-charcoal-700/80 hover:bg-forest text-ivory/80 hover:text-white flex items-center justify-center transition-all duration-200 border border-charcoal-600/50 shadow-sm hover:scale-105" data-platform="instagram" aria-label="Follow EVERCOAT on Instagram" title="Instagram">
+              <svg class="w-4 h-4 fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <!-- Facebook -->
+            <a href="#" class="social-link w-10 h-10 rounded-xl bg-charcoal-700/80 hover:bg-forest text-ivory/80 hover:text-white flex items-center justify-center transition-all duration-200 border border-charcoal-600/50 shadow-sm hover:scale-105" data-platform="facebook" aria-label="Follow EVERCOAT on Facebook" title="Facebook">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <!-- Pinterest -->
+            <a href="#" class="social-link w-10 h-10 rounded-xl bg-charcoal-700/80 hover:bg-forest text-ivory/80 hover:text-white flex items-center justify-center transition-all duration-200 border border-charcoal-600/50 shadow-sm hover:scale-105" data-platform="pinterest" aria-label="Follow EVERCOAT on Pinterest" title="Pinterest">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M12 0a12 12 0 0 0-4.37 23.18c-.06-.98-.12-2.48.02-3.55.13-.98.88-6.42.88-6.42s-.22-.44-.22-1.1c0-1.03.6-1.8 1.34-1.8.63 0 .94.47.94 1.04 0 .63-.4 1.58-.61 2.46-.17.73.37 1.33 1.1 1.33 1.32 0 2.33-1.4 2.33-3.41 0-1.78-1.28-3.03-3.11-3.03-2.27 0-3.6 1.7-3.6 3.46 0 .69.26 1.42.59 1.82.07.08.08.15.06.23-.06.27-.21.85-.24.97-.04.16-.13.2-.3.12-1.11-.52-1.8-2.14-1.8-3.45 0-2.8 2.04-5.38 5.88-5.38 3.09 0 5.48 2.2 5.48 5.14 0 3.07-1.93 5.54-4.62 5.54-.9 0-1.75-.47-2.04-1.03l-.56 2.12c-.2.78-.75 1.76-1.12 2.36A12 12 0 1 0 12 0z"/>
+              </svg>
+            </a>
+            <!-- YouTube -->
+            <a href="#" class="social-link w-10 h-10 rounded-xl bg-charcoal-700/80 hover:bg-forest text-ivory/80 hover:text-white flex items-center justify-center transition-all duration-200 border border-charcoal-600/50 shadow-sm hover:scale-105" data-platform="youtube" aria-label="Follow EVERCOAT on YouTube" title="YouTube">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55a3.016 3.016 0 0 0-2.122 2.136C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.55 9.376.55 9.376.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-10 mt-10 border-t border-charcoal-700 flex flex-col sm:flex-row items-center justify-between text-xs text-ivory/60 gap-4">
+        <p>&copy; <span class="current-year">2026</span> EVERCOAT. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-white transition">Privacy Policy</a>
+          <a href="#" class="hover:text-white transition">Terms & Conditions</a>
+          <a href="login.html" class="hover:text-white transition">Staff Demo Login</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       FLOATING BACK TO TOP BUTTON
+       ======================================================================== -->
+  <button 
+    type="button" 
+    id="back-to-top-btn" 
+    class="back-to-top fixed bottom-6 right-6 z-40 p-3 rounded-full bg-forest text-white shadow-xl hover:bg-forest-600 transition-all duration-300 opacity-0 pointer-events-none translate-y-4 focus:outline-none"
+    aria-label="Back to top of page"
+  >
+    <i data-lucide="arrow-up" class="w-5 h-5"></i>
+  </button>
+
+  <!-- JavaScript Modules -->
+  <script src="assets/js/interactions.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
